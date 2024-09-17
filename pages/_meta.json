@@ -1,6 +1,25 @@
 {
   "index": "Introduction",
+  "---": {
+    "type": "separator",
+    "title": "Getting Started"
+  },
   "getting-started": "Getting Started",
+  "--- advanced": {
+    "type": "separator",
+    "title": "Advanced"
+  },
+  "advanced": "Advanced",
+  "--- profile": {
+    "type": "separator",
+    "title": "Profile Mastery"
+  },
+  "profile-mastery": "Profile Mastery",
+  "--- deep": {
+    "type": "separator",
+    "title": "The Deep End"
+  },
+  "deep-end": "The Deep End",
   "about": {
     "title": "About",
     "type": "page"

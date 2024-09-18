@@ -4,22 +4,28 @@
     "type": "separator",
     "title": "Getting Started"
   },
-  "getting-started": "Getting Started",
+  "g-soft-track": "Soft Track",
+  "g-hard-track": "Hard Track",
   "--- advanced": {
     "type": "separator",
     "title": "Advanced"
   },
-  "advanced": "Advanced",
+  "a-soft": "Soft Track",
+  "a-hard": "Hard Track",
   "--- profile": {
     "type": "separator",
     "title": "Profile Mastery"
   },
-  "profile-mastery": "Profile Mastery",
+  "frontend": "Frontend",
+  "backend": "Backend",
+  "mobile": "Mobile",
+  "data": "Data & ML",
   "--- deep": {
     "type": "separator",
     "title": "The Deep End"
   },
-  "deep-end": "The Deep End",
+  "d-hard": "Hard Track",
+  "d-soft": "Soft Track",
   "about": {
     "title": "About",
     "type": "page"

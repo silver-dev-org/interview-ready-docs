@@ -4,7 +4,11 @@ import { DocsThemeConfig } from "nextra-theme-docs";
 const config: DocsThemeConfig = {
   logo: (
     <>
-      <img width="180" src="/images/logo-white.svg" />
+      <img
+        style={{ position: "relative", right: "21px" }}
+        width="180"
+        src="/images/logo-white.svg"
+      />
     </>
   ),
   darkMode: false,

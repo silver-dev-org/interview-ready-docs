@@ -1,0 +1,18 @@
+{
+  "--- soft": { "title": "Soft Track", "type": "separator" },
+  "meta": "Interview Meta",
+  "management": "Engineering Management Interview",
+  "product-review": "Product Review",
+  "work-tests": "Work Tests",
+  "behavioral": "Behavioral (II): Storytelling",
+  "behavioral3": "Behavioral (III): American Work Culture",
+  "history": "Gabriel's Real Interview History",
+  "--- hard": { "title": "Hard Track", "type": "separator" },
+  "system-design": "System Design (IV): Advanced Concepts",
+  "leetcode-hard": "Leetcode Hards",
+  "python": "Adv. Python",
+  "review": "Code Reviewing",
+  "ruby": "Adv. Ruby",
+  "golang": "Adv. Golang",
+  "advanced-coding": "Advanced Coding Patterns"
+}

@@ -1,34 +1,18 @@
 {
   "index": "Introducción",
-  "getting-started": "Getting Started",
-  "--- advanced": {
-    "type": "separator",
-    "title": "Advanced"
-  },
-  "a-soft": "Soft Track",
-  "a-hard": "Hard Track",
-  "--- profile": {
-    "type": "separator",
-    "title": "Profile Mastery"
-  },
-  "frontend": "Frontend",
-  "backend": "Backend",
-  "mobile": "Mobile",
-  "data": "Data & ML",
-  "--- deep": {
-    "type": "separator",
-    "title": "The Deep End"
-  },
-  "d-hard": "Hard Track",
-  "d-soft": "Soft Track",
-  "about": {
-    "title": "About",
-    "type": "page"
-  },
-  "contact": {
-    "title": "Contact ↗",
-    "type": "page",
-    "href": "https://twitter.com/shuding_",
+  "roadmap": {
+    "title": "Roadmap ↗",
+    "href": "https://roadmap.sh/r/interview-ready",
     "newWindow": true
-  }
+  },
+  "roadmap-title": {
+    "title": "Roadmap ↗",
+    "type": "page",
+    "href": "https://roadmap.sh/r/interview-ready",
+    "newWindow": true
+  },
+  "getting-started": "Getting Started",
+  "advanced": "Advanced",
+  "profile-mastery": "Profile Mastery",
+  "the-deep": "The Deep End"
 }

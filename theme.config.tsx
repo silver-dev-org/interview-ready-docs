@@ -2,7 +2,13 @@ import React from "react";
 import { DocsThemeConfig } from "nextra-theme-docs";
 
 const config: DocsThemeConfig = {
-  logo: <span>Interview Ready</span>,
+  logo: (
+    <>
+      <img width="180" src="/images/logo-white.svg" />
+    </>
+  ),
+  darkMode: false,
+  nextThemes: { defaultTheme: "dark" },
   project: {
     link: "https://silver.dev/repo",
   },
@@ -21,12 +27,19 @@ const config: DocsThemeConfig = {
     ),
     link: "https://silver.dev/slack",
   },
-  docsRepositoryBase: "https://github.com/shuding/nextra-docs-template",
+  docsRepositoryBase:
+    "https://github.com/conanbatt/interview-ready-docs/blob/main",
   footer: {
     text: "Interview Ready Documentation",
   },
   sidebar: {
     defaultMenuCollapseLevel: 1,
+  },
+  editLink: {
+    text: "Editá esta página",
+  },
+  feedback: {
+    content: "Mandanos feedback!",
   },
 };
 

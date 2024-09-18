@@ -1,13 +1,12 @@
 {
-  "index": "Introducción",
+  "index": {
+    "title": "Introducción",
+    "theme": {
+      "layout": "full"
+    }
+  },
   "roadmap": {
     "title": "Roadmap ↗",
-    "href": "https://roadmap.sh/r/interview-ready",
-    "newWindow": true
-  },
-  "repo": {
-    "title": "Repo ↗",
-    "type": "Page",
     "href": "https://roadmap.sh/r/interview-ready",
     "newWindow": true
   },

@@ -1,0 +1,10 @@
+{
+  "--- soft": { "title": "Soft Track", "type": "separator" },
+  "linkedin": "Preparando el LinkedIn",
+  "resume": "Preparando el Resume",
+  "screening": "Screening Call Guide",
+  "---": { "title": "Hard Track", "type": "separator" },
+  "strings": "CTCI: Strings And Arrays",
+  "strings-challenge": "[Challenge] Strings And Arrays",
+  "takehomes": "Guía de takehomes"
+}

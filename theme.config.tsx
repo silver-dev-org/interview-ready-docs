@@ -13,6 +13,9 @@ const config: DocsThemeConfig = {
   footer: {
     text: "Interview Ready Documentation",
   },
+  sidebar: {
+    defaultMenuCollapseLevel: 1,
+  },
 };
 
 export default config;

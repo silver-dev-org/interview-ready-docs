@@ -43,7 +43,7 @@ const config: DocsThemeConfig = {
     text: "Editá esta página",
   },
   feedback: {
-    content: "Mandanos feedback!",
+    content: "Mandanos feedback",
   },
 };
 

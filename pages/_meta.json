@@ -12,6 +12,14 @@
     "href": "https://roadmap.sh/r/interview-ready",
     "newWindow": true
   },
+  
+  "open-jobs-title": {
+    "title": "Open Jobs ↗",
+    "type": "page",
+    "href": "https://jobs.ashbyhq.com/Silver?utm_source=vA6XXNNe6o",
+    "newWindow": true
+  },
+  
   "interview-ready": "Interview Ready",
   "resources-and-programs": "Resources & Programs"
 }

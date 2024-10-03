@@ -1,23 +1,10 @@
 {
   "index": {
-    "title": "Introducción",
+    "title": "Esta Guía",
     "theme": {
       "layout": "full"
     }
   },
-  "roadmap": {
-    "title": "Roadmap ↗",
-    "href": "https://roadmap.sh/r/interview-ready",
-    "newWindow": true
-  },
-  "roadmap-title": {
-    "title": "Roadmap ↗",
-    "type": "page",
-    "href": "https://roadmap.sh/r/interview-ready",
-    "newWindow": true
-  },
-  "getting-started": "Getting Started",
-  "advanced": "Advanced",
-  "profile-mastery": "Profile Mastery",
-  "the-deep": "The Deep End"
-}
+  "interview-ready": "Interview Ready",
+  "resources-and-programs": "Resources & Programs",
+  }

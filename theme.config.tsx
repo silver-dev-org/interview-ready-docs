@@ -45,6 +45,9 @@ const config: DocsThemeConfig = {
   editLink: {
     text: "Editá esta página",
   },
+  toc: {
+    title: "En esta página",
+  },
   feedback: {
     content: "Mandanos feedback",
   },

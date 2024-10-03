@@ -5,6 +5,13 @@
       "layout": "full"
     }
   },
+
+  "roadmap-title": {
+    "title": "Roadmap ↗",
+    "type": "page",
+    "href": "https://roadmap.sh/r/interview-ready",
+    "newWindow": true
+  },
   "interview-ready": "Interview Ready",
   "resources-and-programs": "Resources & Programs"
 }

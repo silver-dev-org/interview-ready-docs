@@ -1,1 +1,15 @@
-
+{
+  "silvered: "SilverEd",
+  "perks-and-benefits": "Perks & Benefits",
+  "roadmap": {
+    "title": "Open Jobs ↗",
+    "href": "https://jobs.ashbyhq.com/Silver?utm_source=vA6XXNNe6o",
+    "newWindow": true
+  },
+  "roadmap-title": {
+    "title": "Open Jobs ↗",
+    "type": "page",
+    "href": "https://jobs.ashbyhq.com/Silver?utm_source=vA6XXNNe6o",
+    "newWindow": true
+  },
+}

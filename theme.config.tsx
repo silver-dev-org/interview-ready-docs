@@ -16,7 +16,7 @@ const config: DocsThemeConfig = {
       <img
         style={{ position: "relative", right: "21px" }}
         width="180"
-        src="/images/logo-white.svg"
+        src="/images/silver-logo-white.svg"
       />
     </>
   ),

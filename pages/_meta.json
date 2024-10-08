@@ -1,11 +1,16 @@
 {
+  "index": {
+    "title": "Introducción",
+    "theme": {
+      "layout": "full"
+    }
+  },
   "roadmap-title": {
     "title": "Roadmap ↗",
     "type": "page",
     "href": "https://roadmap.sh/r/interview-ready",
     "newWindow": true
   },
-
   "open-jobs-title": {
     "title": "Open Jobs ↗",
     "type": "page",

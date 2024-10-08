@@ -5,6 +5,12 @@ const config: DocsThemeConfig = {
   search: {
     placeholder: "Buscar en la documentación...",
   },
+  head: (
+    <>
+      <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+      <link rel="icon" href="images/favicon.png" type="image/png" />
+    </>
+  ),
   logo: (
     <>
       <img

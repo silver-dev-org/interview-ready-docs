@@ -1,5 +1,7 @@
 import React from "react";
 import { DocsThemeConfig } from "nextra-theme-docs";
+import { Card } from "nextra/components";
+import { LinkIcon } from "./components/icons";
 
 const config: DocsThemeConfig = {
   primaryHue: 25,
@@ -71,6 +73,22 @@ const config: DocsThemeConfig = {
     text: "Editá esta página",
   },
   toc: {
+    extraContent: (everything) => {
+      return (
+        <Card
+          icon={<LinkIcon />}
+          //@ts-ignore
+          title={
+            <>
+              Author
+              <br />
+              Gabriel Benmergui
+            </>
+          }
+          href="https://silver.dev/ed"
+        />
+      );
+    },
     title: "En esta página",
   },
   feedback: {

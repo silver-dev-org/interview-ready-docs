@@ -1,6 +1,11 @@
 {
   "silvered": "SilverEd",
-  "perks-and-benefits": "Perks & Benefits",
+  "perks-and-benefits": "Promociones",
+  "slack": {
+    "title": "Slack ↗",
+    "href": "https://silver.dev/slack",
+    "newWindow": true
+  },
   "open-jobs": {
     "title": "Open Jobs ↗",
     "href": "https://jobs.ashbyhq.com/Silver?utm_source=vA6XXNNe6o",

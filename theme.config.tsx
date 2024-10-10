@@ -2,6 +2,8 @@ import React from "react";
 import { DocsThemeConfig } from "nextra-theme-docs";
 
 const config: DocsThemeConfig = {
+  primaryHue: 25,
+  primarySaturation: 95,
   search: {
     placeholder: "Buscar en la documentación...",
   },

@@ -4,6 +4,23 @@ import { DocsThemeConfig } from "nextra-theme-docs";
 const config: DocsThemeConfig = {
   primaryHue: 25,
   primarySaturation: 95,
+  banner: {
+    key: "1",
+    dismissible: true,
+    text: (
+      <>
+        ⚙ La documentación de Interview Ready es abierta.{" "}
+        <a
+          style={{ textDecoration: "underline" }}
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://github.com/conanbatt/interview-ready-docs"
+        >
+          Ayudanos a mejorarla!
+        </a>
+      </>
+    ),
+  },
   search: {
     placeholder: "Buscar en la documentación...",
   },

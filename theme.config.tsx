@@ -1,45 +1,6 @@
 import React from "react";
 import { DocsThemeConfig } from "nextra-theme-docs";
-import { Card } from "nextra/components";
-import { LinkIcon } from "./components/icons";
-
-function Author({ name, role, href }) {
-  return (
-    <Card
-      href={href}
-      icon={<LinkIcon />}
-      //@ts-ignore
-      title={
-        <span className="author-block">
-          <span className="author-name">{name}</span>
-          <br />
-          <span className="author-role">{role}</span>
-        </span>
-      }
-    />
-  );
-}
-
-function Authors() {
-  // const router = useRouter();
-  //const { pageMap } = useConfig(); // Nextra's page structure
-
-  const authors = [
-    {
-      name: "Gabriel Benmergui",
-      role: "Silver.dev Founder",
-      href: "https://www.linkedin.com/in/gabriel-benmergui/",
-    },
-  ];
-  return (
-    <>
-      <span className="authors-title">Autores</span>
-      {authors.map((author) => (
-        <Author key={author.name} {...author} />
-      ))}
-    </>
-  );
-}
+import { Authors } from "./components/authors";
 
 const config: DocsThemeConfig = {
   primaryHue: 25,

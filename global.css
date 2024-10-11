@@ -20,6 +20,14 @@ a {
     margin-bottom: 5px;
 }
 
-.author-role {
+.author-role,
+.resource-description {
+    font-weight: 400;
     color: hsla(70, 16%, 93%, 0.5);
+}
+
+.resource-card {
+    width: 50%;
+    margin: 20px 0;
+    gap: 20px;
 }

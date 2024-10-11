@@ -27,7 +27,7 @@ a {
 }
 
 .resource-block {
-    margin-left: 15px;
+    margin-left: 16px;
 }
 
 .resource-card {
@@ -40,17 +40,16 @@ a {
     border-radius: 8px;
 }
 
-.resource-card svg {
-    width: 20px;
-}
-
 .resource-card:hover {
     border-color: rgba(229, 229, 229);
-    /* background: rgba(35 36 41, 0.7); */
 }
 
 .resource-card .nextra-card:hover {
     background: rgba(47, 47, 47, 0.8) !important;
+}
+
+.resource-card svg {
+    width: 2rem !important;
 }
 
 .icon-color-red svg {

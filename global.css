@@ -26,6 +26,10 @@ a {
     color: hsla(70, 16%, 93%, 0.5);
 }
 
+.resource-block {
+    margin-left: 15px;
+}
+
 .resource-card {
     width: 50%;
     margin: 20px 0;
@@ -36,11 +40,19 @@ a {
     border-radius: 8px;
 }
 
+.resource-card svg {
+    width: 20px;
+}
+
 .resource-card:hover {
     border-color: rgba(229, 229, 229);
     /* background: rgba(35 36 41, 0.7); */
 }
 
 .resource-card .nextra-card:hover {
-    background: rgba(224, 97, 6, 0.9) !important;
+    background: rgba(47, 47, 47, 0.8) !important;
+}
+
+.icon-color-red svg {
+    color: red !important;
 }

@@ -4,7 +4,7 @@ import { BoxIcon } from "./icons";
 
 export function Resource({ title, description, href, icon }) {
   return (
-    <div className="resource-card">
+    <div className="resource-card icon-color-red">
       <Card
         target="_blank"
         rel="noopener noreferrer"

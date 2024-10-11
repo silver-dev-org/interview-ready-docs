@@ -6,3 +6,20 @@ a {
     text-decoration: none !important;
     font-weight: 700;
 }
+
+.authors-title {
+    margin-bottom: 5px;
+    display: block;
+}
+
+.author-block {
+    margin-left: 5px;
+}
+
+.author-name {
+    margin-bottom: 5px;
+}
+
+.author-role {
+    color: hsla(70, 16%, 93%, 0.5);
+}

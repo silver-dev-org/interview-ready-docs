@@ -1,4 +1,4 @@
-export default [
+export const linkedIn = [
   {
     label: "padre",
     children: [

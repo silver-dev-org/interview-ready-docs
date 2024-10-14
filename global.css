@@ -55,3 +55,7 @@ a {
 .icon-color-red svg {
     color: red !important;
 }
+
+.nextra-sidebar-container .nextra-focus {
+    font-weight: 400;
+}

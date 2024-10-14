@@ -1,15 +1,14 @@
 import React from "react";
 import { Card } from "nextra-theme-docs";
-import { BoxIcon } from "./icons";
 
 export function Resource({ title, description, href, icon }) {
   return (
-    <div className="resource-card icon-color-red">
+    <div className="resource-card">
       <Card
         target="_blank"
         rel="noopener noreferrer"
         href={href}
-        icon={<BoxIcon />}
+        icon={icon}
         //@ts-ignore
         title={
           <span className="resource-block">

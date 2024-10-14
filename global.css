@@ -37,7 +37,7 @@ $gradient-bottom-left: linear-gradient(315deg, #d7263dff, #f46036ff, #2e294eff, 
 $gradient-radial: radial-gradient(#d7263dff, #f46036ff, #2e294eff, #1b998bff, #c5d86dff);
 */
 
-a {
+.nextra-content a {
     text-decoration: none !important;
     font-weight: 700;
 }

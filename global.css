@@ -90,3 +90,7 @@ $gradient-radial: radial-gradient(#d7263dff, #f46036ff, #2e294eff, #1b998bff, #c
 .nextra-sidebar-container .nextra-focus {
     font-weight: 400;
 }
+
+.nx-list-disc {
+    margin-top: 0 !important;
+}

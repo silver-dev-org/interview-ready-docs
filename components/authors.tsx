@@ -6,7 +6,7 @@ function Author({ name, role, href }) {
   return (
     <Card
       href={href}
-      icon={<LinkIcon />}
+      icon={<LinkIcon className="color-4" />}
       //@ts-ignore
       title={
         <span className="author-block">

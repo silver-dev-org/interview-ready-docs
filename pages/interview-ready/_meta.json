@@ -10,7 +10,13 @@
     "href": "https://roadmap.sh/r/interview-ready",
     "newWindow": true
   },
-  "getting-started": "🎬 Getting Started",
+  "getting-started": {
+    "title": "🎬 Getting Started",
+    "theme": {
+      "toc": false,
+      "layout": "full"
+    }
+  },
   "advanced": "🎩 Advanced",
   "profile-mastery": "⭐️ Profile Mastery",
   "the-deep": "🛣️ The Deep End",

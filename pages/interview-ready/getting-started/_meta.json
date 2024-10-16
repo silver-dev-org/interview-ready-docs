@@ -1,0 +1,20 @@
+{
+  "---soft": {
+    "title": "Soft Track",
+    "type": "separator"
+  },
+  "preparando-linkedin": {
+    "title": "Preparando el LinkedIn",
+    "theme": {
+      "toc": false
+    }
+  },
+  "preparando-el-CV": "Preparando el CV",
+  "pasando-la-screening": "Pasando la Screening",
+  "---hard": {
+    "title": "Hard Track",
+    "type": "separator"
+  },
+  "guia-de-takehomes": "Guía de Takehomes",
+  "strings-arrays": "CTCI: Strings & Arrays"
+}

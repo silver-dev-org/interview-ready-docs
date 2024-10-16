@@ -1,19 +1,19 @@
 {
   "index": {
-    "title": "Introducción",
+    "title": "ℹ️ Introducción",
     "theme": {
       "layout": "full"
     }
   },
   "roadmap": {
-    "title": "Roadmap ↗",
+    "title": "🗺️ Roadmap ↗",
     "href": "https://roadmap.sh/r/interview-ready",
     "newWindow": true
   },
-  "getting-started": "Getting Started",
-  "advanced": "Advanced",
-  "profile-mastery": "Profile Mastery",
-  "the-deep": "The Deep End",
+  "getting-started": "🎬 Getting Started",
+  "advanced": "🎩 Advanced",
+  "profile-mastery": "⭐️ Profile Mastery",
+  "the-deep": "🛣️ The Deep End",
   "authors": {
     "display": "hidden",
     "values": [

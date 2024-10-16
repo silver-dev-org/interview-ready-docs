@@ -94,3 +94,6 @@ $gradient-radial: radial-gradient(#d7263dff, #f46036ff, #2e294eff, #1b998bff, #c
 .nx-list-disc {
     margin-top: 0 !important;
 }
+.irembed-wrapper {
+    margin: 20px 0;
+}

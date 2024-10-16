@@ -17,7 +17,7 @@ export function Embed({ src }) {
 
 export function IREmbed({ src }) {
   return (
-    <div>
+    <div className="irembed-wrapper">
       <Embed src={src} />
       <Callout type="info">
         El video completo disponible en{" "}

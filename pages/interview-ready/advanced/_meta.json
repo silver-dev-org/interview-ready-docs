@@ -1,1 +1,31 @@
-{}
+{
+  "---soft": {
+    "title": "Soft Track",
+    "type": "separator"
+  },
+  "trabajando-con-recruiters": "Trabajando con Recruiters",
+  "consiguiendo-entrevistas": "Consiguiendo Entrevistas",
+  "behavioral-preguntas-clasicas": "Behavioral (I): Preguntas Clásicas",
+  "evaluando-empresas": "Evaluando Empresas", 
+  "negociando-salarios": "Negociando Salarios", 
+  "---hard": {
+    "title": "Hard Track",
+    "type": "separator"
+  },
+  "big-o-notation": "Big(O) Notation",
+  "stacks-queues": "CTCI: Stacks & Queues",
+  "linked-lists": "CTCI: Linked Lists",
+  "connect4": "CTCI: Connect4",
+  "system-design-i": "System Design (I): Core Components",
+  "quizzes-tecnicos": "Quizzes Técnicos",
+  "authors": {
+    "display": "hidden",
+    "values": [
+      {
+        "name": "Gabriel Benmergui",
+        "role": "Silver.dev Founder",
+        "href": "https://www.linkedin.com/in/gabriel-benmergui/"
+      }
+    ]
+  }
+}

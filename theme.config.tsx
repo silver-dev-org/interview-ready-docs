@@ -72,7 +72,7 @@ const config: DocsThemeConfig = {
     text: "Editá esta página",
   },
   toc: {
-    //component: ,
+    //component: null,
     //extraContent: <Authors />,
     title: <Authors />,
   },

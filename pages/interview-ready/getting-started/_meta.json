@@ -4,10 +4,7 @@
     "type": "separator"
   },
   "preparando-linkedin": {
-    "title": "Preparando el LinkedIn",
-    "theme": {
-      "toc": false
-    }
+    "title": "Preparando el LinkedIn"
   },
   "preparando-el-CV": "Preparando el CV",
   "pasando-la-screening": "Pasando la Screening",
@@ -17,5 +14,15 @@
   },
   "guia-de-takehomes": "Guía de Takehomes",
   "strings-arrays": "CTCI: Strings & Arrays",
-  "grabacion": "Tips de Grabacion"
+  "grabacion": "Tips de Grabacion",
+  "authors": {
+    "display": "hidden",
+    "values": [
+      {
+        "name": "Gabriel Benmergui",
+        "role": "Silver.dev Founder",
+        "href": "https://www.linkedin.com/in/gabriel-benmergui/"
+      }
+    ]
+  }
 }

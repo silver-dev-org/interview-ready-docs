@@ -1,9 +1,6 @@
 {
   "index": {
-    "title": "ℹ️ Introducción",
-    "theme": {
-      "layout": "full"
-    }
+    "title": "ℹ️ Introducción"
   },
   "roadmap": {
     "title": "🗺️ Roadmap ↗",
@@ -11,11 +8,7 @@
     "newWindow": true
   },
   "getting-started": {
-    "title": "🎬 Getting Started",
-    "theme": {
-      "toc": false,
-      "layout": "full"
-    }
+    "title": "🎬 Getting Started"
   },
   "advanced": "🎩 Advanced",
   "profile-mastery": "⭐️ Profile Mastery",

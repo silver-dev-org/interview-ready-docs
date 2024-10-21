@@ -1,1 +1,17 @@
-{}
+{
+  "ctci": "Cracking the Coding Interview",
+  "guia-de-takehomes": "Guía de Takehomes",
+  "quizzes-tecnicos": "Technical Quizzes",
+  "system-design-i": "System Design (I): Core Components",
+  "system-design-ii": "System Design (II): Frontend System Design",
+  "authors": {
+    "display": "hidden",
+    "values": [
+      {
+        "name": "Gabriel Benmergui",
+        "role": "Silver.dev Founder",
+        "href": "https://www.linkedin.com/in/gabriel-benmergui/"
+      }
+    ]
+  }
+}

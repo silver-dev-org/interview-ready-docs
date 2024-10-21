@@ -1,0 +1,150 @@
+import { Resource } from '@components/resource';
+import { IREmbed } from '@components/embed';
+import { FilesIcon, LinkIcon } from '@components/icons';
+import { Callout } from 'nextra-theme-docs';
+
+# System Design (I)
+
+Las entrevistas de System Design se presentan al candidato como un case study. Este formato de entrevista apunta a evaluar habilidades de comunicación, experiencia práctica en situaciones complejas de sistemas reales, curiosidad técnica y versatilidad, y profundidad de conocimientos en diferentes tecnologías.    
+
+Estas entrevistas se hacen casi exclusivamente en inglés y por eso es necesario practicar, hablar y presentar en video, y ejercitar distintos tipos de desafíos. 
+
+Aprovechá todos los recursos recomendados, los materiales extendidos y la Guía de System Design. 
+
+<IREmbed src="https://www.youtube.com/embed/bxR0YR4ubOw?si=fnzx-wh_ciKiAbdS"/>
+
+## 🔗 Recursos
+
+<Resource
+icon={<LinkIcon className="color-4"/>}
+title="Excalidraw"
+description="Herramienta online para dibujar"
+href="https://excalidraw.com/"
+/>
+
+<Resource
+icon={<LinkIcon className="color-4"/>}
+title="Educative.io"
+description="Curso de Grokking the Design Interview"
+href="https://www.educative.io/courses/grokking-the-system-design-interview?aff=VERz"
+/>
+
+## **📑 Materiales extendidos**
+
+Ejemplos de blog posts que hablan de arquitectura:
+
+- [https://discord.com/blog/how-discord-stores-trillions-of-messages](https://discord.com/blog/how-discord-stores-trillions-of-messages)
+- [https://netflixtechblog.com/tagged/software-architecture](https://netflixtechblog.com/tagged/software-architecture)
+- [Libreria de Excalidraw para componentes](https://libraries.excalidraw.com/?target=_excalidraw&useHash=true&token=tPBG_3Xg_oR0jLeoOViBe&theme=light&version=2&sort=default#rohanp-system-design)
+
+## 👨🏼‍💻 Guía de System Design
+
+### ✅ Practice Checklist
+
+- The deliverable is a white-board style design. If you don’t deliver this, you fail. Get acquainted with expressing solutions at [https://excalidraw.com/](https://excalidraw.com/).
+- Practice presenting designs and technical topics in English. Fluidity, Jargon, and articulation of ideas are key. Record yourself and evaluate it.
+- Interview practice and mostly passive studies aren’t substitutes for real-world experience of in-depth study. Courses like the one at [Educative](https://www.educative.io/courses/grokking-modern-system-design-interview-for-engineers-managers?aff=VERz) are great starting points.
+- ❌ Do not hand-wave complexity, pretend to understand things you don’t.
+- [Opinionated] Develop your solution organically. Don’t add fluff or start with a complicated preset. Real applications are not designed from scratch but incrementally according to the use case.
+- Component Checklist
+    
+    This is a fundamental list of components and technologies that should be in your toolkit for a system design interview. You should understand each item and the good scenario for using it.
+    
+    - Core Components
+        - Databases
+            - SQL (Postgres)
+            - Mongo
+            - Wide-tables(ex. Cassandra, ScyllaDB)
+            - Key Value stores
+                - Redis
+                - Storage Buckets (S3)
+        - Queues (Async processing)
+            - Amazon SQS
+            - RabbitMQ
+            - Kafka
+        - Search (Indexing for use cases)
+            - Elastic Search / Solr
+        - Caching (efficient content service)
+            - DB layer
+            - API/APP caching
+            - CDNs
+    - Frontend Components
+        - Caching
+        - Client-Side vs Server Side Strategies
+        - Static buckets (S3)
+        - CDN
+        - Edge
+        - Real-time / Liveness
+        - Lambda & Cloudflare workers
+    - Low-Level
+        - Fault Tolerance / required components
+        - Availability / uptime
+        - Scalability / response to surges and growth
+        - Sharding / capacity to respond to growth
+    - Advanced Concepts
+        - Fault Tolerance / required components
+        - Availability / uptime
+        - Scalability / response to surges and growth
+        - Sharding / capacity to respond to growth
+- Study the example Interview: Zonaprop [https://www.youtube.com/watch?v=Rxn52ROtdTs](https://www.youtube.com/watch?v=Rxn52ROtdTs)
+
+### 📚 Materials
+
+The [educative.io](http://educative.io/?aff=VERz) course [Grokking the System Design Interview](https://www.educative.io/courses/grokking-modern-system-design-interview-for-engineers-managers?aff=VERz) is one of the best materials for prepping for system design interviews. It includes the basic theory and system designs to go through and understand them. The content is ***paid*** but tremendously useful.
+
+<Callout emoji="💡">
+  [Educative.io](http://educative.io/?aff=VERz) is part of the [SilverEd](https://silver.dev/ed) program. If you find a job through us, you can reimburse your expenditures.
+</Callout>
+
+An alternative source for prepping is [https://bytebytego.com/](https://bytebytego.com/).
+
+### ⚔️ Challenges
+
+Record yourself presenting and talking about each system design challenge. It is important to use both Excalidraw and be constantly speaking. 
+
+**15m Challenges**
+
+1. Design a Meme Generator website
+2. Design an email Queueing Service
+3. Design a Web Scraper
+4. Design a url shortener
+
+**45m Challenges**
+
+1. Design Twitter
+2. Design Uber
+3. Design WhatsApp
+4. Design Google Docs
+5. Design a Stock Broker application
+6. [Hard] Design an airline ticketing system
+
+**Design OpenSea**
+
+- **First Stage**
+    
+    We are going to build a view-only NFT marketplace. Blockchains will be the source of information for items, item pricing, and transactions. We want to show users different NFT collections through a homepage, browse pages and search. We will focus on a web-only experience first.
+    
+    We want the experience for the user to be fresh with the latest information from the blockchain.
+    
+- **Second Stage**
+    
+    We noticed users are price-aware and sensitive to know the latest pricing and activity in trading NFTs. We would like to add liveness to pricing information on all items, making it a real-time system across the entire website.
+    
+    We also want users to be able to create NFTs on our platform through a web-ui and submit it to the blockchain. 
+    
+- **Third Stage**
+    
+    We are getting constantly DDOS attacked by bots, taking down our website for our regular users. How can we mitigate or solve this issue?
+    
+    The platform has various scenarios where things stop working well. What can we do to improve reliability for the following scenarios?
+    
+    - Blockchains having downtime
+    - Blockchain event processors going down
+    - Databases being overloaded and slowing down or going down.
+    - API Servers going down
+    - Website having frequent application errors
+- Example design:  [https://excalidraw.com/#json=vXQEDdkPeyz4sMROT3YXR,6ry3jAQa6YU8aBDpsITrjg](https://excalidraw.com/#json=vXQEDdkPeyz4sMROT3YXR,6ry3jAQa6YU8aBDpsITrjg)
+
+**Architecture Design**
+
+1. Explain OAuth

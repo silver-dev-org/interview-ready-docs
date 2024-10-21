@@ -7,17 +7,17 @@
     "href": "https://roadmap.sh/r/interview-ready",
     "newWindow": true
   },
-  "getting-started": {
-    "title": "🎬 Getting Started"
+  "soft-fundamentals": {
+    "title": "👨🏻‍💼 Soft Skills Fundamentals"
   },
-  "advanced": {
-    "title": "🎩 Advanced"
+  "technical-fundamentals": {
+    "title": "👨🏻‍💻 Technical Fundamentals "
   }, 
   "profile-mastery": {
-    "title": "⭐️ Profile Mastery"
+    "title": "🎩 Profile Mastery"
   },
-  "the-deep": {
-    "title": "🛣️ The Deep End"
+  "bonus-tracks": {
+    "title": "💿 Bonus Tracks"
   },
   "authors": {
     "display": "hidden",

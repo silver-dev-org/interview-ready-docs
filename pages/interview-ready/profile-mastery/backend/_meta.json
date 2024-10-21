@@ -1,1 +1,14 @@
-{}
+{
+  "lru-cache": "LRU Cache",
+  "connect4": "Connect 4",
+  "authors": {
+    "display": "hidden",
+    "values": [
+      {
+        "name": "Gabriel Benmergui",
+        "role": "Silver.dev Founder",
+        "href": "https://www.linkedin.com/in/gabriel-benmergui/"
+      }
+    ]
+  }
+}

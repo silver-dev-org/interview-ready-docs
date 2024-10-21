@@ -1,1 +1,21 @@
-{}
+{
+  "preparando-linkedin": "Preparando el LinkedIn"
+  "preparando-el-CV": "Preparando el CV",
+  "consiguiendo-entrevistas": "Consiguiendo Entrevistas",
+  "procesos-de-entrevistas": "Entendiendo Procesos de Entrevistas",
+  "trabajando-con-recruiters": "Trabajando con Recruiters",
+  "evaluando-empresas": "Evaluando Empresas", 
+  "pasando-la-screening": "Pasando la Screening",
+  "behavioral-preguntas-clasicas": "Behavioral (I): Preguntas Clásicas",
+  "behavioral-storytelling": "Behavioral (II): Storytelling",
+  "authors": {
+    "display": "hidden",
+    "values": [
+      {
+        "name": "Gabriel Benmergui",
+        "role": "Silver.dev Founder",
+        "href": "https://www.linkedin.com/in/gabriel-benmergui/"
+      }
+    ]
+  }
+}

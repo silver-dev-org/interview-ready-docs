@@ -1,0 +1,109 @@
+import { Resource } from '@components/resource';
+import { IREmbed } from '@components/embed';
+import { FilesIcon, LinkIcon } from '@components/icons';
+import { Callout } from 'nextra-theme-docs';
+
+# Quizzes Técnicos
+
+Un formato de entrevistas común es un "ping-pong" de preguntas o una conversación técnica. Se evalúa familiaridad con conceptos técnicos, experiencia y comunicación. 
+
+<IREmbed src="https://www.youtube.com/embed/dcD4hYhYQLg?si=-MviuVeSHh64dnHs"/>
+
+## 🔗 Recursos
+
+<Resource
+icon={<LinkIcon className="color-4"/>}
+title="Repositorio"
+description="Los challenges de la sección disponibles para practicar"
+href="https://github.com/conanbatt/interview-practice/tree/main/coding-challenges"
+/>
+
+<Resource
+icon={<FilesIcon className="color-2"/>}
+title="PDF de CTCI"
+description="El libro Cracking the Coding interview con explicaciones profundas de cada ejercicio"
+href="https://github.com/conanbatt/interview-practice/tree/main/coding-challenges/cracking-the-coding-interview/book"
+/>
+
+## 🙋🏻‍♂️ ¿Cómo responder *quizzes*?
+
+- Sé breve
+    - Respuestas largas muestran una falta de familiaridad con los conceptos, problemas con el idioma o problemas de comunicación.
+- Usá *jargon* (jerga) técnicamente correcta
+    - Utilizar la terminología correcta es clave para dar una buena impresión. Si no sabés el término correcto, explicalo dando una definición.
+    - No uses sustitutos o términos incorrectos si no sabés. (Ej. “arquitectura” por “organización de código”).
+    - No uses *buzzwords* (palabras de moda) para implicar que sabés algo que en realidad no sabés.
+- Salteate lo que no sepas
+    - Si algo no lo sabés decilo rápido y saltá a la siguiente pregunta.
+    - Inventar respuestas esperando acertar es un motivo de descalificación inmediata.
+
+## **🔄 Javascript Event Loop explicado**
+
+Javascript Event Loop explained - [https://www.youtube.com/watch?v=8aGhZQkoFbQ](https://www.youtube.com/watch?v=8aGhZQkoFbQ) 
+
+## **📋 Silver.dev Candidate Quiz**
+
+### 🧬 Computer Science
+
+- What is the Big O notation (worst-case complexity analysis)
+    - What are the worst-case scenarios of the Array operations: get, push, delete
+    - What are the worst-case scenarios of the Hash operations: get, push, delete
+- Trees & Graphs
+    - What are common strategies to traverse/visit all the nodes on a tree structure?
+- And what about Graphs? What is functional programming? What are some advantages of imperative programming?
+
+### ⚙️ Systems
+
+- What is a load balancer?
+- What is a CDN?
+- How would you implement caching for web application? What components or strategies would you consider?
+- What are Rest API and Graphql API? What are the trade-offs?
+- What is a relational database?
+    - Why would you choose it over NoSQL alternatives?
+    - What is Redis?
+        - What are good use cases?
+        - What are the limitations?
+- What is MongoDB
+    - What are good use cases?
+    - What are the limitations?
+- How do you scale up databases?
+- Distributed systems concepts
+    - What is Fault Tolerance?
+    - What is Redundancy?
+    - What is Availability?
+
+### 👮🏻‍♀️ Web Security
+
+- What is a CSRF attack and how to prevent it?
+- What is an XSS attack?
+- What is CORS?
+- What is a content security policy?
+- What is a DDOS attack? How can you prevent it?
+
+### ⏱️ Performance
+
+- The website you are working on has degraded client-side performance. How would you measure and analyze this problem?
+    - What are Web Vitals?
+- The website you are working on has degraded server-side performance. How would you measure and analyze this problem?
+
+### 💻 Javascript Environments
+
+- What is a promise? How does it work internally?
+- What does Non-blocking IO mean in Node.js?
+- What is the Event Loop in Node.js?
+- What is a closure?
+- What is variable hoisting?
+- What is Currying from functional programming and what are possible use cases in Javascript?
+- What are Javascript Generators?
+- **[Advanced]** How does setTimeout work in the browser internally?
+- **[Advanced]** How could you implement meta-programming in Javascript?
+- **[Advanced]** What’s the difference between Javascript’s Map and WeakMap built-in structures?
+
+### ⚛️ React
+
+- What is React Suspense?
+- What are React Server Components? Why would you use them?
+- What is prop drilling? How can you avoid it?
+- What are good use cases for React Refs?
+- How can you clean up a Component's side effects on dismount?
+- How do you render multiple applications on the same page? And what if they are hosted on different websites?

@@ -1,1 +1,15 @@
-{}
+{
+  "react-signup-from": "React Sign-up Form",
+  "react-idioms": "React Idioms",
+  "promises": "Promises",
+  "authors": {
+    "display": "hidden",
+    "values": [
+      {
+        "name": "Gabriel Benmergui",
+        "role": "Silver.dev Founder",
+        "href": "https://www.linkedin.com/in/gabriel-benmergui/"
+      }
+    ]
+  }
+}

@@ -1,0 +1,88 @@
+import { Resource } from '@components/resource';
+import { IREmbed } from '@components/embed';
+import { FilesIcon, LinkIcon } from '@components/icons';
+import { Callout } from 'nextra-theme-docs';
+
+# Guía de Takehomes
+
+Los *takehomes* o *takehome challenges* son uno de los **métodos más populares de entrevista técnica**.
+
+En la lección en video vamos a seguir los pasos en esta **Guía de Takehomes**, explicando porque es tan importante **destacarse** y cómo lograrlo. También vamos a ver **ejemplos de entregas** que fallan, entregas que pasan, y entregas que son excepcionales.
+
+<IREmbed src="https://www.youtube.com/embed/aeyAG2DPWz0?si=3s77TwK95Y6FTjui"/>
+
+<Callout type="info">
+
+Si estás preparando un takehome challenge para una empresa a la que te postulaste a través de Silver.dev, te recomendamos que lo envíes para una revisión general a Gabriel Benmergui en Github (el nombre de usuario es “conanbatt”).
+
+</Callout>
+
+## **👤 Experiencia del Entrevistador**
+
+La clave de una buen takehome es enfocarse en la **experiencia del entrevistador**. Es decir, que le quede todo claro.
+
+Las empresas que eligen utilizar takehome challenges lo hacen para ahorrar tiempo y energía. Las entrevistas de live coding son exigentes para los devs y reducen el número de candidatos que pueden evaluar por unidad de tiempo. Al darte un takehome challenge, **filtran a las personas que no se comprometen** (porque lleva tiempo hacerlo) y **pueden revisar todo con más calma y rapidez**. Asimismo, permite una **evaluación asíncronica/más rápida** de los candidatos.
+
+Como las takehome challenges sirven para filtrar y hacer el trabajo más fácil, es fundamental que tu entrega sea **fácil de entender**. Vas a estar compitiendo contra otros, así que cuánto más clara sea tu tarea, más ventaja vas a tener.
+
+En otras palabras: **es más fácil rechazar una tarea mal hecha, que apreciar contribuciones valiosas**. Una tarea con una solución fantástica pero con un error evidente, implica un rechazo. La misma debe estar impecable para no darle al entrevistador razones para decirte que no.
+
+## **❌ Incompatibilidad con los requerimientos**
+
+La **razón más común de un rechazo** es que la expectativa del entrevistador sea diferente de lo que se entregó. Siempre **pedí aclaraciones** al entrevistador para saber con exactitud lo que se va a evaluar, ya que los requerimientos  suelen ser abiertos.
+
+**⏳ Deadline y tiempo sugerido**
+
+La mayoría de las tareas tienen **límites de tiempo establecidos** o **sugerencias sobre cuánto tiempo dedicarles**. Nunca vi un challenge rechazado por el tiempo dedicado, per sí rechazados por entregarse fuera del deadline, incompletos, con bugs  o subóptimos.
+
+Intentá entregar lo mejor que puedas y dedicales el tiempo que sea necesario. Es mejor invertir más tiempo y asegurar la oportunidad, que apurarse y perderla.
+
+## **💯 Takehome challenges excepcionales**
+
+Las entregas excepcionales son aquellas **memorables para los entrevistadores**. Las van a recordar mucho tiempo después de que se hayan hecho porque se destacan entre las demás.
+
+Las **entregas que impresionan** evidencian excelentes rasgos como experiencia, creatividad, intuición e ingenio. Este es el momento para venderte en lugar de vender a un ingeniero. ¡Usá tus habilidades para hacer algo que nadie más haría!
+
+Algunos ejemplos:
+
+- **Enseñale algo al entrevistador:** Presentá un nuevo concepto, técnica o giro que el entrevistador probablemente no conozca. Aportá una perspectiva innovadora que sorprenda.
+- **Demostrá un compromiso excepcional:** Esforzate 10 veces más, entregá un un trabajo que supere las expectativas.
+- **Resolvé el challenge de una manera creativa:** Hacelo de manera innovadora, que demuestre ingenio.
+- **Agregá una feature inesperada:** Demostrá tu sentido del producto mejorando la experiencia del usuario con una característica innovadora pero necesaria
+
+## 💭 **Experiencia de Gabriel**
+
+> *Una vez tuve que hacer  una tarea para construir una interfaz de usuario para una empresa de tecnología inmobiliaria. Los requisitos mencionaron explícitamente fueron  el uso de Redux. Me negué. Expliqué que Redux no era la herramienta adecuada para la tarea y que la funcionalidad se podía resolver con los hooks integrados de useReducer de React. Esto demostró que entendía tácticamente cómo usar cualquier store, y también un criterio sobre cuándo usar uno u otro.*
+>
+
+## 📋 **Checklist para Takehomes**
+
+- **Stack tecnológico seleccionado**
+    - Es sumamente importante elegir el stack tecnológico más actualizado y cercano al cliente. Si entregases una take-home con un stack obsoleto, serás considerado como tal.
+    - Si elegís un stack diferente, es posible que tu entrevistador pueda evaluarlo a fondo o compararlo negativamente con otras aplicaciones.
+    - Pese a que sean experimentales, siempre ayudará que construyas con las herramientas o frameworks más actualizados. Aprendelas si es necesario y demostrá tu predisposición a seguir aprendiendo.
+    - If you deliver a submission with a stack older than the company uses, you look outdated.
+- **Historial de Git**
+    - Es MANDATORIO separar el boilerplate (código base) de tus contribuciones originales.
+    - Dividí tu trabajo en chunks. No hagas mil commits: Aspirá a un historial legible y navegable en git.
+    - Hacé comentarios de commit informativos (evitá "arreglado esto, funcionó esto, mejorado esto".
+- **Fácil de probar**
+    - Si es posible, deployá el proyecto para que el entrevistador pueda probarlo sin instalar nada o pueda utilizarlo con un teléfono.
+- **Documentación**
+    - ES MANDATORIO brindar instrucciones para correr y testear el proyecto. Asegurate que las mismas funcionen desde cero.
+    - Si al seguir la documentación, el entrevistador se encuentra con errores de compilación o ejecución, vas a ser rechazado.
+    - Agregá casos de prueba y de uso, comentale al entrevistador qué debe hacer para verificar tu programa y asegurate de que los pasos funcionen de manera correcta. Queremos evitar que el entrevistador entre en modo “adivinanza” o corrección de errores. Pensá que esto implica un costo cognitivo muy grande para él, y eso puede perjudicar tu evaluación.
+    - Es esperable que los desarrolladores senior demuestren juicio y experiencia. Mencioná las diferentes decisiones técnicas que tomaste y explica por qué. ¿Por qué elegiste una librería por sobre la otra? ¿Cuáles fueron algunas de las decisiones importantes y por qué?
+- **SIN BUGS**
+    - Cualquier tipo de bug es razón suficiente para que te rechacen. Considerá que es más fácil encontrar una razón para decir que “no”, que encontrar una aplicación excepcional. Por consiguiente, los bugs hacen que tu entrega pase a segundo plano en comparación con otras sin bugs.
+- **Cumplir con los requerimientos**
+    - Tanto los requisitos técnicos como los del producto *se deben cumplir.*
+    - Incluí detalles o instrucciones. Cualquier otra aplicación que cumpla perfectamente los requerimientos va a ser mejor que la tuya.
+    - Chequeá muchas veces los requerimientos y asegurate de que se cumplan de manera precisa.
+- **Velocidad de entrega**
+    - Algunos challenges tienen deadlines (límites de tiempo) y otros no. La velocidad de entrega es un gran predictor de tu capacidad.
+    - El approach más práctico es completarlo en un fin de semana o entre los 7 días hábiles.
+    - ❗ Si ahorrás tiempo porque tu challenge “aparenta ser lo suficientemente bueno” es probable que seas rechazado. Los candidatos que logran llegar hasta el final no hacen esto.
+- **Testear el código**
+    - Algunos entrevistadores pueden llegar a penalizar las entregas sin haber testeado el código. Es prudente preguntar cuáles son las expectativas para tu challenge en particular, para así asegurar que tengan la cobertura que se espera.
+    - Se recomienda escribir de 0 a 1 prueba para evidenciar tu capacidad. Siempre es más fácil agregar pruebas que escribir las primeras.

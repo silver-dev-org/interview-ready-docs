@@ -1,6 +1,22 @@
-import React from "react";
 import { DocsThemeConfig } from "nextra-theme-docs";
 import { Authors } from "./components/authors";
+
+const Logo = () => {
+  return (
+    <>
+      <img
+        src="/images/silver-logo-white.svg"
+        alt="Logo"
+        className="logo logo-dark"
+      />
+      <img
+        src="/images/silver-logo-black.svg"
+        alt="Logo"
+        className="logo logo-light"
+      />
+    </>
+  );
+};
 
 const config: DocsThemeConfig = {
   primaryHue: 25,
@@ -31,16 +47,7 @@ const config: DocsThemeConfig = {
       <link rel="icon" href="images/favicon.png" type="image/png" />
     </>
   ),
-  logo: (
-    <>
-      <img
-        style={{ position: "relative", right: "21px" }}
-        width="180"
-        src="/images/silver-logo-white.svg"
-      />
-    </>
-  ),
-  darkMode: false,
+  logo: () => <Logo />,
   nextThemes: { defaultTheme: "dark" },
   project: {
     link: "https://silver.dev/repo",

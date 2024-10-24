@@ -97,3 +97,26 @@ $gradient-radial: radial-gradient(#d7263dff, #f46036ff, #2e294eff, #1b998bff, #c
 .irembed-wrapper {
     margin: 40px 0;
 }
+
+/* Default image for light mode */
+.logo {
+    position: relative;
+    right: 21px;
+    width: 180px;
+}
+
+.dark .logo-dark {
+    display: block;
+}
+
+.dark .logo-white {
+    display: none;
+}
+
+.light .logo-white {
+    display: block;
+}
+
+.light .logo-dark {
+    display: none;
+}

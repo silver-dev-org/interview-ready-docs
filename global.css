@@ -109,11 +109,11 @@ $gradient-radial: radial-gradient(#d7263dff, #f46036ff, #2e294eff, #1b998bff, #c
     display: block;
 }
 
-.dark .logo-white {
+.dark .logo-light {
     display: none;
 }
 
-.light .logo-white {
+.light .logo-light {
     display: block;
 }
 

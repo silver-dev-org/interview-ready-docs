@@ -3,12 +3,13 @@
     "title": "🪙 Sobre Silver.dev"
   },
   "open-jobs-title": {
-    "title": "Website ↗",
+    "title": "Open Jobs ↗",
     "type": "page",
     "href": "https://jobs.ashbyhq.com/Silver?utm_source=vA6XXNNe6o",
     "newWindow": true
   },
 
+  "candidate-guide": "📕 Candidate Guide",
   "interview-ready": "✅ Interview Ready",
   "resources-and-programs": "🎁 Recursos & Beneficios"
 }

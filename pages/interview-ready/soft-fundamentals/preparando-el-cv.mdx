@@ -2,6 +2,7 @@ import { Resource } from "@components/resource";
 import { IREmbed } from "@components/embed";
 import { FilesIcon, LinkIcon } from "@components/icons";
 import { Callout } from "nextra-theme-docs";
+import PDFViewer from "@components/PDFViewer";
 
 # Preparando el CV
 
@@ -11,20 +12,8 @@ Más del **90% de las applications** a un puesto laboral se **filtran por el cur
 
 ## Ejemplo de CV
 
-<div style={{ textAlign: "center" }}>
-  <iframe
-    src="/resources/victorvigon.pdf"
-    width="100%"
-    height="500"
-    style={{ border: "none" }}
-  >
-    <p>
-      Unable to render PDF.{" "}
-      <a href="/resources/victorvigon.pdf" target="_blank">
-        Click here to download or view the PDF.
-      </a>
-    </p>
-  </iframe>
+<div>
+  <PDFViewer />
 </div>
 
 ## CV checklist

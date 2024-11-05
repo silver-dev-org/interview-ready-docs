@@ -1,7 +1,7 @@
-import { Resource } from '@components/resource';
-import { IREmbed } from '@components/embed';
-import { FilesIcon, LinkIcon } from '@components/icons';
-import { Callout } from 'nextra-theme-docs';
+import { Resource } from "@components/resource";
+import { IREmbed } from "@components/embed";
+import { FilesIcon, LinkIcon } from "@components/icons";
+import { Callout } from "nextra-theme-docs";
 
 # Preparando el CV
 
@@ -11,9 +11,21 @@ Más del **90% de las applications** a un puesto laboral se **filtran por el cur
 
 ## Ejemplo de CV
 
-<object width="100%" height="500" type="application/pdf" data="/resources/victorvigon.pdf">
-  Unable to render pdf
-</object>
+<div style={{ textAlign: "center" }}>
+  <iframe
+    src="/resources/victorvigon.pdf"
+    width="100%"
+    height="500"
+    style={{ border: "none" }}
+  >
+    <p>
+      Unable to render PDF.{" "}
+      <a href="/resources/victorvigon.pdf" target="_blank">
+        Click here to download or view the PDF.
+      </a>
+    </p>
+  </iframe>
+</div>
 
 ## CV checklist
 
@@ -22,21 +34,21 @@ Más del **90% de las applications** a un puesto laboral se **filtran por el cur
 ### 🧩 Formato
 
 - **Usá un template**
-    - A las **empresas en USA** les gusta el CV en [**estilo Latex**](https://www.freecodecamp.org/news/writing-a-killer-software-engineering-resume-b11c91ef699d/).
-    - Usá el **template "silver-dev-cv"** en [Typst](https://typst.app/).
-    - Los diseños creativos y entregados en Word le bajan la calidad a tu CV y hasta pueden llegar a ser **motivos de rechazo**.
+  - A las **empresas en USA** les gusta el CV en [**estilo Latex**](https://www.freecodecamp.org/news/writing-a-killer-software-engineering-resume-b11c91ef699d/).
+  - Usá el **template "silver-dev-cv"** en [Typst](https://typst.app/).
+  - Los diseños creativos y entregados en Word le bajan la calidad a tu CV y hasta pueden llegar a ser **motivos de rechazo**.
 - Tiene que ser en **una sola página**.
 
 ### 📄 Contenido principal
 
 - Tu CV tiene que ser consistente con tu perfil de Linkedin, pero no igual.
-    - Cualquier discrepancia va a crear dudas, y las dudas tienden a rechazos.
+  - Cualquier discrepancia va a crear dudas, y las dudas tienden a rechazos.
 - Editá tu CV de acuerdo a la empresa que lo estés mandando:
-    - Mirá perfiles de Linkedin de personas que trabajan en la empresa y copialos, estos son los “ganadores”.
-    - Cambiá nombres de las posiciones, contenido, mensajes y habilidades para tratar de que se ajusten más a lo que la empresa está buscando.
-    - Querés contar una historia que resalte los principales puntos fuertes de tu perfil.
+  - Mirá perfiles de Linkedin de personas que trabajan en la empresa y copialos, estos son los “ganadores”.
+  - Cambiá nombres de las posiciones, contenido, mensajes y habilidades para tratar de que se ajusten más a lo que la empresa está buscando.
+  - Querés contar una historia que resalte los principales puntos fuertes de tu perfil.
 - [Recomendado] Agregá una introducción o “acerca de” que acomodes para cada empresa.
-    - Esta introducción debería responder explícita o implícitamente a la pregunta de “Por qué la empresa XXX debería contratarme”.
+  - Esta introducción debería responder explícita o implícitamente a la pregunta de “Por qué la empresa XXX debería contratarme”.
 - No incluyas imágenes ni foto de perfil. Esto es tabú para empresas en USA.
 - Cada vez que edites el contenido pasale [Grammarly](https://app.grammarly.com/), errores de tipeo en el CV son inaceptables.
 

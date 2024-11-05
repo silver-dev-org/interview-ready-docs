@@ -1,28 +1,28 @@
 import React, { useEffect } from "react";
 
 const PDFViewer = () => {
-  const resizeEmbed = () => {
-    const embed = document.getElementById("pdfEmbed");
-    if (embed) {
+  const resizeIframe = () => {
+    const iframe = document.getElementById("pdfIframe");
+    if (iframe) {
       const windowHeight = window.innerHeight;
-      embed.style.height = `${windowHeight}px`;
+      iframe.style.height = `${windowHeight}px`;
     }
   };
 
   useEffect(() => {
-    resizeEmbed();
-    window.addEventListener("resize", resizeEmbed);
-    return () => window.removeEventListener("resize", resizeEmbed);
+    resizeIframe();
+    window.addEventListener("resize", resizeIframe);
+    return () => window.removeEventListener("resize", resizeIframe);
   }, []);
 
   return (
     <div style={{ height: "100vh", overflow: "hidden" }}>
-      <embed
-        id="pdfEmbed"
+      <iframe
+        id="pdfIframe"
         src="/resources/victorvigon.pdf"
-        type="application/pdf"
         width="100%"
         style={{ border: "none", height: "100%" }}
+        title="PDF Viewer"
       />
     </div>
   );

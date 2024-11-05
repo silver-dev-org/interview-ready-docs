@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 
-const PDFViewer = () => {
+export function PDFViewer() {
   const resizeIframe = () => {
     const iframe = document.getElementById("pdfIframe");
     if (iframe) {
@@ -26,6 +26,4 @@ const PDFViewer = () => {
       />
     </div>
   );
-};
-
-export default PDFViewer;
+}

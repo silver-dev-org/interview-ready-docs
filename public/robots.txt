@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://docs.silver.dev
+
+# Sitemaps
+Sitemap: https://docs.silver.dev/sitemap.xml

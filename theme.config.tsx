@@ -1,5 +1,6 @@
-import { DocsThemeConfig } from "nextra-theme-docs";
+import { DocsThemeConfig, useConfig } from "nextra-theme-docs";
 import { Authors } from "./components/authors";
+import { useRouter } from "next/router";
 
 const Logo = () => {
   return (
@@ -21,6 +22,31 @@ const Logo = () => {
 const config: DocsThemeConfig = {
   primaryHue: 25,
   primarySaturation: 95,
+  useNextSeoProps() {
+    return { titleTemplate: "%s - Silver.dev" };
+  },
+  head() {
+    const { asPath, defaultLocale, locale } = useRouter();
+    const { title } = useConfig();
+    const url =
+      "https://docs.silver.dev" +
+      (defaultLocale === locale ? asPath : `/${locale}${asPath}`);
+
+    return (
+      <>
+        <meta property="og:url" content={url} />
+        <meta property="og:title" content={`${title} - Silver.dev`} />
+        <meta
+          property="og:description"
+          content={
+            "Documentación oficial de Silver.dev - Mejorá tu rendimiento en entrevistas"
+          }
+        />
+        <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+        <link rel="icon" href="images/favicon.png" type="image/png" />
+      </>
+    );
+  },
   banner: {
     key: "1",
     dismissible: true,
@@ -41,12 +67,6 @@ const config: DocsThemeConfig = {
   search: {
     placeholder: "Buscar en la documentación...",
   },
-  head: (
-    <>
-      <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
-      <link rel="icon" href="images/favicon.png" type="image/png" />
-    </>
-  ),
   logo: () => <Logo />,
   nextThemes: { defaultTheme: "dark" },
   project: {

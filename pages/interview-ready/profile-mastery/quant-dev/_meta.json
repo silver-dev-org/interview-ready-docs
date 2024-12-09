@@ -1,6 +1,6 @@
 {
   "black-scholes-implementation": "Black-Scholes Implementation",
-  "option-chain-tl": "Option Chain ETL",
+  "option-chain-etl": "Option Chain ETL",
   "ml-modeling-quant-analysis": "ML Modeling & Quant Analysis",
   "authors": {
     "display": "hidden",

@@ -5,6 +5,9 @@
   "backend": {
     "title": "Backend"
   }, 
+  "backend": {
+    "title": "Quant Dev"
+  }, 
   "authors": {
     "display": "hidden",
     "values": [

@@ -1,1 +1,15 @@
-
+{
+  "black-scholes-implementation": "Black-Scholes Implementation",
+  "option-chain-tl": "Option Chain ETL",
+  "ml-modeling-quant-analysis": "ML Modeling & Quant Analysis",
+  "authors": {
+    "display": "hidden",
+    "values": [
+      {
+        "name": "Juan Pablo Pisano",
+        "role": "Ingeniero Industrial, programador, matemático, Quant. Escritor y autor.",
+        "href": "https://www.linkedin.com/in/juanpablopisano/"
+      }
+    ]
+  }
+}

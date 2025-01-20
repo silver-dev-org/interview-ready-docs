@@ -42,8 +42,7 @@ const config: DocsThemeConfig = {
             "Documentación oficial de Silver.dev - Mejorá tu rendimiento en entrevistas"
           }
         />
-        <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
-        <link rel="icon" href="images/favicon.png" type="image/png" />
+        <link rel="icon" href="/images/favicon.png" type="image/png" />
       </>
     );
   },

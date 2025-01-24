@@ -3,6 +3,7 @@
   "carreras-exponenciales": "Carreras Exponenciales",
   "evaluando-equity": "Evaluando Equity y Ofertas Laborales",
   "guia-de-tipeo-para-devs": "Guía de Tipeo para Devs",
+  "ingles": "Inglés",
   "authors": {
     "display": "hidden",
     "values": [
@@ -15,6 +16,11 @@
         "name": "Matías Del Carlo",
         "role": "Fullstack Engineer",
         "href": "https://www.linkedin.com/in/mdelcarlo/"
+      },
+       {
+        "name": "Marcel Strohmeier",
+        "role": "English Coach",
+        "href": "https://silver.dev/english
       }
     ]
   }

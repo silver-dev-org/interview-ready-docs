@@ -1,8 +1,8 @@
 {
   "ctci": "Cracking the Coding Interview",
-  "guia-de-takehomes": "Guía de Takehomes",
-  "quizzes-tecnicos": "Technical Quizzes",
-  "system-design-i": "System Design",
+  "system-design": "System Design",
+  "code-quality": "Code Quality",
+  "quizzes": "Quizzes",
   "authors": {
     "display": "hidden",
     "values": [

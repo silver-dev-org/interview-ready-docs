@@ -1,0 +1,21 @@
+{
+  "negociando-salarios": "Negociando Salarios",
+  "carreras-exponenciales": "Carreras Exponenciales",
+  "evaluando-equity": "Evaluando Equity y Ofertas Laborales",
+  "guia-de-tipeo-para-devs": "Guía de Tipeo para Devs",
+  "authors": {
+    "display": "hidden",
+    "values": [
+      {
+        "name": "Gabriel Benmergui",
+        "role": "Silver.dev Founder",
+        "href": "https://www.linkedin.com/in/gabriel-benmergui/"
+      },
+      {
+        "name": "Matías Del Carlo",
+        "role": "Fullstack Engineer",
+        "href": "https://www.linkedin.com/in/mdelcarlo/"
+      }
+    ]
+  }
+}

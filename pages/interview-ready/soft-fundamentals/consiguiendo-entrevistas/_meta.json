@@ -1,0 +1,15 @@
+{
+  "preparando-linkedin": "Preparando LinkedIn",
+  "preparando-el-cv": "Preparando el CV",
+  "consiguiendo-entrevistas": "Consiguiendo Entrevistas",
+  "authors": {
+    "display": "hidden",
+    "values": [
+      {
+        "name": "Gabriel Benmergui",
+        "role": "Silver.dev Founder",
+        "href": "https://www.linkedin.com/in/gabriel-benmergui/"
+      }
+    ]
+  }
+}

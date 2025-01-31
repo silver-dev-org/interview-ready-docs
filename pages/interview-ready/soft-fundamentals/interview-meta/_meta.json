@@ -1,0 +1,16 @@
+{
+  "trabajando-con-recruiters": "Trabajando con Recruiters",
+  "feedback": "Dando y Recibiendo Feedback",
+  "procesos-de-entrevistas": "Entendiendo Procesos de Entrevistas",
+  "diseno-de-entrevistas": "Diseño de Entrevistas",
+  "authors": {
+    "display": "hidden",
+    "values": [
+      {
+        "name": "Gabriel Benmergui",
+        "role": "Silver.dev Founder",
+        "href": "https://www.linkedin.com/in/gabriel-benmergui/"
+      }
+    ]
+  }
+}

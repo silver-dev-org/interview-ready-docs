@@ -3,13 +3,13 @@ import { IREmbed } from '@components/embed';
 import { FilesIcon, LinkIcon } from '@components/icons';
 import { Callout } from 'nextra-theme-docs';
 
-# System Design, el caso de OpenSea: Core Components, Frontend Architecture y Low Level Design 
+# System Design, el caso de OpenSea: Core Components, Frontend Architecture y Low Level Design
 
-Las entrevistas de System Design se presentan al candidato como un case study. Este formato de entrevista apunta a evaluar habilidades de comunicación, experiencia práctica en situaciones complejas de sistemas reales, curiosidad técnica y versatilidad, y profundidad de conocimientos en diferentes tecnologías.    
+Las entrevistas de System Design se presentan al candidato como un case study. Este formato de entrevista apunta a evaluar habilidades de comunicación, experiencia práctica en situaciones complejas de sistemas reales, curiosidad técnica y versatilidad, y profundidad de conocimientos en diferentes tecnologías.
 
-Estas entrevistas se hacen casi exclusivamente en inglés y por eso es necesario practicar, hablar y presentar en video, y ejercitar distintos tipos de desafíos. 
+Estas entrevistas se hacen casi exclusivamente en inglés y por eso es necesario practicar, hablar y presentar en video, y ejercitar distintos tipos de desafíos.
 
-Aprovechá todos los recursos recomendados, los materiales extendidos y la Guía de System Design. 
+Aprovechá todos los recursos recomendados, los materiales extendidos y la Guía de System Design.
 
 <IREmbed src="https://www.youtube.com/embed/ch8sLOXAQoc?si=EWqq1N38AI8qZPF4"/>
 
@@ -52,9 +52,9 @@ Ejemplos de blog posts que hablan de arquitectura:
 - ❌ Do not hand-wave complexity, pretend to understand things you don’t.
 - [Opinionated] Develop your solution organically. Don’t add fluff or start with a complicated preset. Real applications are not designed from scratch but incrementally according to the use case.
 - Component Checklist
-    
+
     This is a fundamental list of components and technologies that should be in your toolkit for a system design interview. You should understand each item and the good scenario for using it.
-    
+
     - Core Components
         - Databases
             - SQL (Postgres)
@@ -103,9 +103,11 @@ The [educative.io](http://educative.io/?aff=VERz) course [Grokking the System D
 
 An alternative source for prepping is [https://bytebytego.com/](https://bytebytego.com/).
 
+En [System Design Fight Club](https://systemdesignfightclub.com/) podes encontrar decenas de videos de distintos challenges de la industria.
+
 ### ⚔️ Challenges
 
-Record yourself presenting and talking about each system design challenge. It is important to use both Excalidraw and be constantly speaking. 
+Record yourself presenting and talking about each system design challenge. It is important to use both Excalidraw and be constantly speaking.
 
 **15m Challenges**
 
@@ -126,23 +128,23 @@ Record yourself presenting and talking about each system design challenge. It is
 **Design OpenSea**
 
 - **First Stage**
-    
+
     We are going to build a view-only NFT marketplace. Blockchains will be the source of information for items, item pricing, and transactions. We want to show users different NFT collections through a homepage, browse pages and search. We will focus on a web-only experience first.
-    
+
     We want the experience for the user to be fresh with the latest information from the blockchain.
-    
+
 - **Second Stage**
-    
+
     We noticed users are price-aware and sensitive to know the latest pricing and activity in trading NFTs. We would like to add liveness to pricing information on all items, making it a real-time system across the entire website.
-    
-    We also want users to be able to create NFTs on our platform through a web-ui and submit it to the blockchain. 
-    
+
+    We also want users to be able to create NFTs on our platform through a web-ui and submit it to the blockchain.
+
 - **Third Stage**
-    
+
     We are getting constantly DDOS attacked by bots, taking down our website for our regular users. How can we mitigate or solve this issue?
-    
+
     The platform has various scenarios where things stop working well. What can we do to improve reliability for the following scenarios?
-    
+
     - Blockchains having downtime
     - Blockchain event processors going down
     - Databases being overloaded and slowing down or going down.

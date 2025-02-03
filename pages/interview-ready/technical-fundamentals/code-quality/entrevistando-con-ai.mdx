@@ -1,0 +1,184 @@
+import { Resource } from '@components/resource';
+import { IREmbed } from '@components/embed';
+import { FilesIcon, LinkIcon } from '@components/icons';
+import { Callout, Cards, Steps } from 'nextra-theme-docs';
+
+# Entrevistando con AI
+
+La ultima revolución en tecnología es el uso de IA para todo - generación de texto, código, imágenes y genera bastante ansiedad en los oficios que parecen que van a ser reemplazados por tecnología. ¿Van a haber más o menos programadores? Se va a pagar más o menos? 
+
+<IREmbed src="https://www.youtube.com/embed/DkSI9QaXa74?si=Xq10aqFVAWkICC7q"/>
+
+# 🧑‍💻 Adaptándose a la tecnología
+
+Hablo bastante de este tema en el podcast [https://open.spotify.com/episode/1PNWocveKoKtAI8e7ALXbU?si=sG5PKrKyQ-2XkOLj3P86Tw](https://open.spotify.com/episode/1PNWocveKoKtAI8e7ALXbU?si=sG5PKrKyQ-2XkOLj3P86Tw).
+En concreto, la herramienta existe y tiene una adopción fuerte por parte de todo el espectro de programadores, aun aquellos que sean skeptics como yo.
+
+La herramienta es un absoluto milagro de la tecnología y como mínimo hay que probarla, estudiarla y evaluarla para agregarla al kit de herramientas.
+
+## ↕️ La adopción y sus consecuencias
+
+Sin embargo, la razón real de la adopción tan repentina de AI para programadores es que es una herramienta que te reduce esfuerzo por default. Te ahorra de tipear, te ahorra de pensar, te ahorra de entender, investigar. No se usa porque lo que produce sea mejor - puede serlo, pero no es porque se adopta y como marca su uso. Eso la hace peligrosa e incómoda, de una manera que no es por ejemplo adoptar un editor nuevo, o un stack nuevo.
+
+Las herramientas generan hábitos que forman tu manera de pensar y trabajar.
+
+Con AI generativo se generan hábitos como:
+
+- No tipear
+- Copiar y pegar código que no entendes
+- Probar/testear código en lugar de entenderlo profundamente
+- Perdida de aprendizaje que viene de crear, probar y reintentar
+
+<aside>
+💡
+
+Muchas personas dicen que una vez que incorporaron AI, no pueden volver a codear sin usarla. Esto debería ser una alarma del efecto de largo plazo sobre su capacidad de programar.
+
+</aside>
+
+- Copiando código
+    
+    Muchas de las conveniencias de IA existían desde antes - copiar código de la internet estuvo disponible por décadas, pero siempre fue considerado una mala práctica tanto personal como profesional. Copiar código siempre fue malo porque **es mas fácil copiar codigo que entenderlo.**
+    
+    Como programadores podemos engañarnos de que entendemos algo cuando no.
+    
+    ```jsx
+    // Este código es generado por IA. Es correcto?
+    
+    function binarySearch(arr, target) {
+      let left = 0;
+      let right = arr.length - 1;
+    
+      while (left <= right) {
+        let mid = Math.floor((left + right) / 2);
+    
+        if (arr[mid] === target) {
+          return mid;  // Target found, return its index
+        }
+    
+        if (arr[mid] < target) {
+          left = mid;  // Search right half
+        } else {
+          right = mid;  // Search left half
+        }
+      }
+    
+      return -1;  // Target not found
+    }
+    
+    ```
+    
+    Supongamos que entendes el código de arriba. Podes reescribirlo de cero? Si no podes, podrías decir que entendiste el código original?
+    
+- Leetcodes & AI
+    
+    Esta el argumento de “porque hacer leetcodes, si la IA te los resuelve” - pero los Leetcodes ya están todos resueltos! Cada uno tiene decenas de soluciones dentro de la misma plataforma. La IA no tiene impacto en la capacidad de copiar código para resolverlos!
+    
+    El objetivo de hacer leetcodes es aprender a resolver desafíos tácticos de programación y entender los patrones de implementación.
+    
+
+En este inconsciente colectivo se sabe que hay algo que esta mal en el hábito, y se revela porque no comparten los prompts que usan para programar. Les da vergüenza.
+
+## 📏 Sugerencias para usar IA
+
+- Compartí los prompts que usas
+    
+    En tu día laboral, en tus challenges, en tus takehomes, entrega los prompts que usaste en el repo.
+    
+    Esto le muestra a la contraparte como usas la IA y genera un trace de como trabajaste. Si te da vergüenza es que sabes que hay algo que esta mal.
+    
+- Escribí, no transcribas
+    
+    Evitá todo lo que puedas copiar código. Lee el código y re-escribilo. Codear es un lenguaje y tenes que aprender a expresar las ideas por tu cuenta. De la misma manera que no podes aprender a hablar en otro idioma solo escuchando, es imposible aprender a expresar ideas en código si no lo practicas.
+    
+    Si no lo podes escribir, pedile a la IA que te ayude a entender que no funciona. Volvete mas fuerte, no mas dependiente.
+    
+- Evitar Trial & Error
+    
+    Si te das cuenta que un codigo solo lo entendes por su output - que lo observas solamente por testearlo, es lo más probable que tenga problemas que no entiendas.
+    
+    Si ves que tenés que debuggear código que no entendes, va a ser mejor escribirlo que copiarlo.
+    
+- Recibí Feedback
+    
+    Uno de los casos menos apreciados de la IA es para recibir feedback rápidamente. Con Silver aplicamos IA para ayudar a los candidatos a evaluar curriculums con [https://resume.silver.dev/](https://resume.silver.dev/).
+    
+    Si dudas de la calidad del código o una solucion, IA es muy buena en generar sugerencias varias y alternativas. Pedile que te revise la solucion.
+    
+    Ejemplo:
+    
+    “Assume you are a very senior engineer reviewing the code of a software engineer before it is merged into the repository. Review this code snippet in Javascript and write a short list pointing out possible bugs, issues, code style improvements, idiomatic implementations and anything that could improve the quality, maintainability and functionality of it.”
+    
+    <aside>
+    💡
+    
+    Es sorprendente lo común que es aplicar código de IA y lo raro que es que se revise el código con IA.
+    
+    </aside>
+    
+
+# ⚖️ El Mercado y las entrevistas
+
+- Entrevistas con IA generativa
+    
+    Pasados dos años del reveal de chatGPT, el mercado sigue tomando entrevistas de la manera pre-IA. Hasta la fecha conozco dos formatos de problemas para la era post-IA: problemas que no son resolubles sin utilizar la IA, o problemas donde la IA es incapaz de resolverlo.
+    
+    Por ejemplo, un takehome muy largo con una meta de tiempo corta hace necesario el uso de IA para entregar de manera rápida. Gumroad tiene una entrevista donde te piden migrar un repositorio de decenas de archivos de un lenguaje a otro en 48-72hs.
+    
+    Uno de los challenges de Silver es para [QA Automation Engineers](https://github.com/conanbatt/qa-automation-prompt/blob/main/README.md). El challenge esta pensado para obligar al talento a hacer features que del que no saben de manera experta, mas una seccion que no es “deducible” por IA.
+    
+    Sin embargo, son problemas nuevos y no testeados en el mercado como selector de talento y se siguen usando problemas con el formato anterior, que no estan pensados para ser “IA-proof”, por lo que se limita el uso de manera implícita o explícita.
+    
+- Takehomes & Timed Challenges
+    
+    Plataformas de challenges como HackerRank, CodeSignal o CoderByte consideran copiar codigo hacer “trampa” y no hay excepción para la IA.
+    
+    Los takehomes ahora son mucho mas fáciles de entregar con mucho codigo generado, por lo que varias empresas consideran reemplazarlos por live coding, o enfocarse en otros criterios para evaluar el takehome como documentación, producto, etc.
+    
+- Candidatos IA que fallan
+    
+    El impacto de IA ha sido mas notable en candidatos que se volvieron dependientes de la IA que de empresas cambiando sus procesos. Aunque antes no hubiesen considerado googlear o copiar codigo de la internet, se les volvio casi imposible trabajar sin constantemente hacerlo.
+    
+    Hay un nuevo formato de candidato que falla entrevistas producto de su hábito con IA, mostrando problemas como:
+    
+    - Congelarse al principio de un problema - “Cold Start"
+    - Se olvidan elementos básicos de su lenguaje principal
+    - Se frustran por problemas que saben que están a un prompt de distancia
+    - Entregan challenges y codigo enteramente escrito por IA
+    - Utilizan herramientas como Copilot que terminan o resolviendo el problema en one-shot, o generando teniendo bugs difíciles sacandole tiempo valioso al candidato
+- Las entrevistas como evaluación de candidatos
+    
+    La realidad es que entregar un challenge hecho por IA es indistinguible de copiar una solución. Es más, el peor talento que no sabe programar **sólo puede entregar algo hecho por IA.** Vos te tenés que diferenciar completamente de esos perfiles.
+    
+    <aside>
+    💡
+    
+    Si vos tomas la postura de que estos problemas hay que resolverlos con IA y el entrevistador aceptase tu propuesta, tendría que tomarte como un junior, porque los junior pueden hacer lo mismo.
+    
+    </aside>
+    
+    Para el entrevistador, recibir codigo generado lo pone en un problema donde no sabe cuando empieza o termina el codigo generado o el del candidato. Hace muy incomodo evaluar talento por lo que la sensación es negativa.
+    
+    <aside>
+    💡
+    
+    El objetivo de una entrevista es saber si quieren trabajar con vos - no buscar una solución técnica a un problema. El problema es artificial y la solucion ya es conocida.
+    
+    </aside>
+    
+- Usar AI en entrevistas te lastima mas de lo que te ayuda
+    
+    En casi todas las entrevistas el uso de AI lastima mas de lo que te pueda ayudar. No se puede copiar código ni mirar soluciones ya hechas en una entrevista, por lo que lo único que te queda para usar es un autocomplete como copilot.
+    
+    En mi experiencia el autocomplete de copilot introduce errores casi garantizado, y termina costando mas tiempo de arreglarse o generando problemas que no hubiesen existido sin usar la IA.
+    
+    Los errores de escribir código son categóricamente distintos a los errores de haber copiado código. Copiar código malo le indica al entrevistador que requerís constante supervisión en todo el trabajo que produzcas. Es un error mucho mas serio que la mayoría que se cometen de escribir código, por lo que con la IA podes cometer errores que te maten instantáneamente.
+    
+    <aside>
+    💡
+    
+    En Silver, una vez candidato copio una regex incorrecta para solucionar un problema. El candidato no se dio cuenta del bug pero el entrevistador si.
+    
+    Si el entrevistador tiene que explicarle su propio codigo a otro programador, el reject esta garantizado.
+    
+    </aside>

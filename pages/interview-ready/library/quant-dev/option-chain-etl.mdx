@@ -1,0 +1,28 @@
+import { Resource } from '@components/resource';
+import { IREmbed } from '@components/embed';
+import { FilesIcon, LinkIcon } from '@components/icons';
+import { Callout } from 'nextra-theme-docs';
+
+# Option Chain ETL
+
+El core de esta seccion es la performance en el transform, generalmente los proyectos suelen tener millones de rows a procesar en real time con batchs muy frecuentes mientras esta abierto el mercado, con lo cual se hace muy importante usar siempre un enfoque de calculo tensorial o de arrays multidimensionales como los de numpy o alguna abstraccion
+
+Otra cuestion importante en esta parte del challenge es no pifiarle en las propiedades de calculo matricial, esto lo deben manejar casi sin darse cuenta que lo estan haciendo, como caminar. 
+
+<IREmbed src="https://www.youtube.com/embed/Q3RnQ8qnj4g?si=fwoYZaIBxzBQBEcg"/>
+
+## 🔗 Recursos
+
+<Resource
+icon={<LinkIcon className="color-4"/>}
+title="Doc oficial API"
+description=""
+href="https://docs.alpaca.markets/reference/authentication-2"
+/>
+
+<Resource
+icon={<FilesIcon className="color-2"/>}
+title="Cheatsheet base de identidades matriciales"
+description=" "
+href="https://en.wikipedia.org/wiki/Matrix_calculus"
+/>

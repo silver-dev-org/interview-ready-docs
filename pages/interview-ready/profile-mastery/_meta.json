@@ -4,10 +4,7 @@
   },
   "backend": {
     "title": "Backend"
-  }, 
-  "quant-dev": {
-    "title": "Quant Dev"
-  }, 
+  },  
   "authors": {
     "display": "hidden",
     "values": [

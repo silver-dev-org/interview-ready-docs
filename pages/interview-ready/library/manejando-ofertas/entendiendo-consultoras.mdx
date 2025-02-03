@@ -1,0 +1,163 @@
+
+import { Resource } from '@components/resource';
+import { IREmbed } from '@components/embed';
+import { FilesIcon, LinkIcon } from '@components/icons';
+import { Callout, Cards, Steps } from 'nextra-theme-docs';
+
+# Entendiendo a las Consultoras
+
+Las consultoras tienen un modelo de negocio con ciertas características que hay que tener en cuenta al elegirlas para trabajar y al entrevistar.  
+
+<IREmbed src="https://www.youtube.com/embed/92w9cBYViDU?si=cla9iMUM_yVFLSn6"/>
+
+
+## 💼 El Negocio
+
+Lo normalmente llamado consultora en estados unidos se llama Staffing Agencies, y en general son utilizadas para estos servicios:
+
+- Conseguir y administrar talento
+- Reducir riesgos legales y administrativos
+- Manejar payroll, servicios y beneficios para empleados
+
+Cada uno de estos items tiene su modelo de negocio y cobranzas.
+
+- Conseguir y administrar talento: Markup (20-40%) sobre el salario base o “Gapping”
+- Contratación a nombre de la empresa: Flat-Fee (500-2000$) o Markup (10-15%)
+- Payroll - servicios administrativos: 300-500$/persona
+
+### ❌ Gapping
+
+Gapping es la diferencia entre lo que esta dispuesto a cobrar el talento y a pagar la empresa. Esta práctica es ahora anticuada y anti-competitiva, pero muy común pre-pandemia.  
+
+Bajo el incentivo de que quedarse con la diferencia, las consultoras buscan al talento mas barato posible para maximizar sus ganancias, lo que termina mal visto por la empresa y por los candidatos. Algunas agencias de gran escala usan este sistema como BairesDev o Globant, pero ya es un modelo casi inexistente.
+
+<Callout emoji="💡">
+La facturación de una consultora es unidad x markup. Mientras mas gente mejor o más markup, mejor.
+
+</Callout>
+
+### ↕️ Márgenes altos y márgenes bajos
+
+Los programadores frecuentemente se quejan de las consultoras aduciendo que sus margenes son oportunidad de aumento de salario. Esto no funciona así en términos de negocio porque es una situación ya codificada en contratos.
+
+Además, la consultora toma responsabilidades como reemplazar al talento que se va, algo que el programador contratado directo obviamente no cumple. Ese servicio es lo que le cuesta mantener a la consultora - cada persona que renuncia es perdida de revenue y necesitan reemplazarlo y están alineados con el empleador.
+
+Ademas, la consultora tiene que mantener staff para ventas y account management, para buscar a esos clientes, procesarlos, y mantenerlos contentos a lo largo de un contrato.
+
+Las consultoras son negocios con márgenes brutos altos pero márgenes netos relativamente bajos.
+
+Los devs que intentan “puentear” a las consultoras rara vez consiguen éxito y en el camino se ganan la hostilidad de la consultora.
+
+## 🧀 Los Incentivos
+
+El problema real que tienen las consultoras no son los márgenes. Son los incentivos.
+
+### 📃 El Contrato
+
+El objetivo #1 de la consultora es **Mantener el contrato.** La consultora gana plata si su contrato se mantiene en el tiempo o crece. No gana mas plata si a la empresa le va bien,  o si el producto es bueno. Gana mas plata mientras mas personas son contratadas. Por eso las consultoras bajan la vara lo mas que puedan mientras no peligre el contrato, lo que genera problemas de largo plazo - equipos mal formados con poca productividad.
+
+Esa baja productividad esperada tiene un costo alto para el crecimiento de un programador, y a la larga los perfiles de consultora tienen graves problemas intentando entrar en startups.
+
+### 🎰 La consultora delega la apuesta al talento
+
+En una relacion de empleo tradicional, el empleador apuesta a que a la larga el talento va a producir mas - que va a evolucionar o formar parte de un equipo donde sume mas que su costo. Si el talento no funciona o no produce, el empleador pierde el capital invertido + costo de oportunidad, por lo que le importa elegir bien.
+
+La consultora típica no arriesga - desde el minuto uno el salario esta cubierto y la ganancia de la consultora también. Lo mas importante es llenar la posición, no la calidad del equipo final.
+
+<Callout emoji="💡">
+Las consultoras no arman equipos. Llenan posiciones.
+
+</Callout>
+
+### 🧻 Talento Descartable
+
+El otro problema es la motivacion de las empresas para utilizar consultoras. La realidad es que las empresas usan consultoras **para despedir rápido.** Eso viene con muchos otros problemas de incentivos - no querés darle trabajo ni importante ni entretenido a la gente que ves como descartable. No queres apostar a su crecimiento personal, a su plan de carrera, o a que “aprendan del negocio” porque siempre esta la opción de cortarles la relación instantáneamente. Por eso en consultoras es importante tener “exactamente” el perfil técnico que necesitan, para no tener que entrenarlo para luego desvincularlo.
+
+Esto hace que el trabajo en si que ofrecen las consultoras sea de menor valor que el trabajo directo en producto. Por eso se les llama también software factories - es “terciarizar la producción” como si fuese hacer ropa o un producto industrial, pero no el desarrollo del producto.
+
+<Callout emoji="💡">
+Lo más importante y más valioso nunca se terceriza.
+
+</Callout>
+
+Por estas razones y algunas más yo recomiendo **evitar a la consultora.**
+
+## 🎭 El Rol en el Ecosistema
+
+Sin embargo, las consultoras cumplen un rol en el ecosistema de tecnología, tanto para empresas como para candidatos.
+
+Las empresas tienen razones legítimas para encontrar valor en las consultoras:
+
+- Empresas que no son de tecnología
+- Empresas que tienen trabajo que americanos no quieren hacer
+- Empresas con restricciones presupuestarias para salarios americanos
+- Empresas que quieren terciarizar parte de su desarrollo o el manejo de talento remoto
+
+Aunque no son las mejores razones, la demanda por trabajo de este tipo es legítima y sostenible en el tiempo.
+
+Para los candidatos, la consultora sigue siendo una de las maneras mas realistas de conseguir un primer trabajo en dólares y en inglés. Para una carrera, cumplen un rol de transición entre el mercado local trabajando en español y el trabajo en startups americanas de manera remota.
+
+Pero a la larga no son las mejores opciones. Los developers que salen de la consultora a una startup, rara vez vuelven.
+
+### 🥇 Calidad de la consultora
+
+Para evaluar la calidad de una consultora aplican muchos de los principios de Evaluando Startups. Vos tenés que buscar la consultora con el proceso de entrevistas mas difícil que puedas pasar.
+
+La consultora que contrata fácil tiene mal talento que va a ser un problema para tu crecimiento de largo plazo. Esto es reconocido rápidamente por el mercado donde se monetiza mas claramente que en una startup:
+
+| **Categoria** | **Salarios para un IC** | **Descripcion** | Ejemplos |
+| --- | --- | --- | --- |
+| Consultora en Pesos | ~ 3k$/mo | Terciarizados de empresas locales y regionales | Globant |
+| Consultoras en Dólares | 3k-6k$/mo | Terciarizados por empresas donde el producto digital es secundario, o en areas no estrategicas | CloudX, GlobalLogic, |
+| Consultoras para Startups | 6k-10k$/mo | Consultoras para startups o proyectos de alta paga | TopTal, Howdy, Turing |
+
+<Callout emoji="💡">
+Dentro de cadata categoría hay consultoras que dan proyectos temporales con rotacion cada 3, 6, 12 meses. Sugiero evitar este tipo de roles porque no agregan a la experiencia - te “resetean” el seniority.
+
+</Callout>
+
+## 📷 Para considerar en las entrevistas
+
+<Callout emoji="💡">
+La lección Consiguiendo Entrevistas funciona perfectamente para consultoras. Es aún más probable conseguir trabajo en consultora de manera pasiva (que te contacten) o hablando con Recruiters directamente en LinkedIn.
+
+</Callout>
+
+### 📜 Narrativa Personal
+
+El valor del talento para la consultoras se puede resumir en:
+
+- Va a durar en el puesto?
+    
+    La ganancia de una consultora tiene que ver con la estabilidad del hire a lo largo del tiempo, mucho mas que por su productividad.
+    
+    En las startups es muy importante entender como elegir a la empresa y al producto, y saber en que te metes para dar resultados excepcionales.
+    
+    En las consultoras no es tan importante. Pueden llegar a moverte de proyectos e industria - expresar preferencias de cualquier tipo puede hacerte parecer rígido o hasta problemático. Tus aspiraciones profesionales de hacer productos o empresas propias se pueden percibir como un riesgo de que renuncies, es una preocupación no una señal de calidad.
+    
+    Queres mostrarte versatil y flexible sobre que tipo de proyectos podes trabajar, mientras que tenes los skills necesarios para satisfacer necesidades técnicas de los clientes.
+    
+- Va a pasar la vara del cliente?
+    
+    Lo que querés mostrar es que sos capaz de ser productivo en las tecnologias especificas que tiene el cliente final. En consultoras hay mas pasos entre el hiring manager y el candidato, por lo que se reducen los requerimientos a una minima expresión que se tienen que cumplir.
+    
+    Si una consultora presenta un candidato de Angular para una posicion de React, quedan mal.
+    
+    Tu experiencia en otros stacks no es parte del paquete de venta para un cliente específico, excepto el rol sea uno flexible para varios clientes.
+    
+    Evitar poner énfasis en lo que no sabes o te falta a prender - enfocate mas en lo que ya tenes que se cumple para el puesto.
+    
+
+### 🤑 Plata
+
+En las entrevistas laborales siempre hay que negociar al final, cuando tenés palanca, y no al principio cuando no te conocen.
+
+En las startups se puede retrasar el proceso de negociación pero las consultoras tendrían que persuadir al cliente de cambiar el presupuesto, lo que pone en stress en el manejo del contrato. Por eso las consultoras tienen presupuestos más rígidos. 
+
+En una primera entrevista con consultoras, pedir salario por arriba del presupuesto es motivo de rechazo inmediato. Tu objetivo es primero conseguir oferta, no negociar, entonces asegurate de pedir algo en el rango esperado.
+
+### 🪑 El juego de la silla
+
+Las consultoras no tienen tanto interés en buscar al mejor talento de un grupo de candidatos como las startups, por lo que a veces se genera un efecto de N posiciones y N+1 Candidatos. 
+
+Las consultoras hacen ofertas en orden de llegada, al primero, y a veces con condiciones explosivas (la oferta es válida 24 horas). Esta practica esta mal vista en startups y deberia estar mal vista acá también. Aunque puede que no tengas opciones, hay que considerar que un lugar que no busca lo mejor seguro no consigue lo mejor.

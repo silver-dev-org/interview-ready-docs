@@ -1,0 +1,162 @@
+import { Resource } from '@components/resource';
+import { IREmbed } from '@components/embed';
+import { FilesIcon, LinkIcon } from '@components/icons';
+import { Callout, Cards, Steps } from 'nextra-theme-docs';
+
+# Code Quality Meta
+
+En todo tipo de entrevistas se evalúa el código no solo por su funcionalidad,  sino por su estilo, estructura y calidad. Existe el código de mayor calidad e igual funcionalidad, y tambien abundan las oportunidades para conversar para evaluar un takehome, una live coding o directamente una entrevista de code review para discutir y conversar estos temas.
+ 
+Cuando un programador es evaluado por la calidad del código, se esta evaluando su experiencia, su capacidad de comunicarse y su **buen gusto.**
+
+<IREmbed src="https://www.youtube.com/embed/VMJn65Ny8yc?si=4HCCTbMRl-VmsbF7"/>
+
+## 💭 Experiencia
+
+Es difícil prepararse para este tipo de evaluación - hay que estudiar legítimamente con ideas, feedback de compañeros y exponer código open source.
+
+En los espacios de trabajo maduros, la variabilidad de talento y sistemas hace que haya gente muy buena que comparte ideas y feedback, y el nivel de todo el talento se eleva orgánicamente con Code Reviews.
+
+Los perfiles que son founders o founding engineers son los que mas sufren estas evaluaciones por estar desconectados de las prácticas más modernas de programación.
+
+Dicho esto hay formas de compensar esta falta práctica con estudio. Hay libros que hablan de estos temas como Pragmatic Programmer, Code Complete, Implementation Patterns (Kent Beck). 
+
+AI es **muy bueno** en dar feedback, e iterar una y otra vez sobre código te va a dar buenas ideas en que se puede mejorar y porque. Es una herramienta muy práctica, aunque no es lo mismo que adoptar teoría de manera profunda primero.
+
+## 👅 Comunicación y Buen Gusto
+
+Como se comunican ideas de programación son una parte fundamental de evaluar como das y recibís feedback sobre el trabajo y sobre tu capacidad de expresar ideas y persuadir.
+
+### 🧱 **Fundamentar las opiniones**
+
+> El 100% de tus opiniones tienen que tener una suposición, una proposición o una justificación. Si no tenés justificación, la respuesta correcta es “no se”.
+> 
+
+Hay componentes subjetivos fuertes en la evaluación de código, pero no significa que de todo lo mismo. Tus preferencias no deben ser expresadas como sensaciónes, sino como ideas o principios que te ayudan a elegir entre opciones que tienen ambigüedad.
+
+“Esto esta bueno/malo” es una frase sin contenido que no instruye ni comunica una idea.
+
+“Esto es malo porque la cantidad de variables afecta la legibilidad” es una opinon con fundamento.
+
+### 💪 *Strong Opinions; Loosely Held*
+
+Es importante tener ideas claras de como hacer las cosas y tomar partido de como hacerlas.  El buen gusto se desarrolla enfocándose en el ***Nuance.*** Los detalles de cada línea de código, de como se escribe, de poder elegir entre alternativas funcionalmente similares.
+
+```tsx
+// Cual es mejor?
+// Para la mayoria de los casos la funcionalidad es igual.
+// La peor observación que se puede hacer es que "son lo mismo"
+
+const foo = () => () => {}
+function foo() {
+	return function second()
+}
+```
+
+Pero tampoco hay que ser necio. Uno tiene que estar dispuesto a cambiar su posición frente a un argumento concreto que va en contra de tu opinión original o tus preferencias.
+
+La incapacidad de “dialogar” o “negociar” que puede ser bueno o malo es una red flag y motivo de descarte en una entrevista.
+
+## ♦️ Tips & Tricks para entrevistas
+
+### 🧑‍💻 Funcionalidad vs Estética / Computadora vs Humano
+
+Una tensión central con código es que lo leen computadoras y personas; a la computadora le afecta la funcionalidad concreta, el efecto en su memoria y cpu. Al ser humano es la legibilidad y adaptabilidad del código.
+
+La calidad de una entrega de código tiene que tomar en consideración a las dos audiencias.
+
+<Callout emoji="💡">
+Un error común es desestimar la ineficiencia de computo de un código aduciendo que es poco importante para el problema o para el trabajo en producción. Esto es y hace lucir al candidato desprolijo y vago.
+
+</Callout>
+
+En una entrevista uno no siempre tiene tiempo ni contexto para balancear un diseño de código y optimizarlo, pero es tu responsabilidad comunicar las falencias de tu entrega y como se podrían corregir. De lo contrario, el entrevistador tiene que evaluarlo como un techo de tus capacidades.
+
+```jsx
+
+// Serially saving records to the database means its an N+1 Query
+// Podes no tener tiempo para corregirlo, pero no se puede dar la impresion
+// de que esta bien.
+records.forEach(record => DB.save(record)) 
+
+```
+
+### ✅ Correctness
+
+El atributo que **no se puede sacrificar** es correctitud. Un código que no cumple los requerimientos es código **roto.**
+
+Bajo ninguna circunstancia es aceptable dejar código roto a propósito en un challenge y es motivo para descalificación inmediata. 
+
+```jsx
+
+// Signup form challenge: email must include an @ and a "." on the domain side
+// La línea de código es incorrecta.
+// Algunos candidatos dicen que lo arreglan despues de resolver otras partes del challenge.
+// Es un error fatal que te deja afuera de casi cualquier proceso.
+if (email.includes("@") && email.includes(".")) { // .@
+}
+```
+
+Es mejor dar una solución parcial correcta que una completa incorrecta - hay que siempre asegurarse de que los requerimientos se entendieron bien y que el programa hace lo que pensás que hace. 
+
+### 💠 Sobre-sofisticación
+
+Especialmente en entrevistas de código en vivo, los ejercicios son cortos y auto-contenidos. No traen los requerimientos ni habitos de codebases grandes con patrones pre-existentes y requerimientos de conformidad.
+
+Muchos candidatos quieren “demostrar sus conocimientos” aplicando unit testing, patrones de diseño de OOP o estructuras de organización de código.
+
+Esto casi nunca sale bien porque, además de perder tiempo en escribir más código del necesario, es estrictamente peor que soluciones mas sencillas, transformando el intento de mostrar conocimientos en evidencia de falta de sabiduría.
+
+```jsx
+// En el problema clásico de Silver Connect4, algunos candidatos crean clases para todas las entidades
+// Esto genera mucho código de boilerplate y que ademas no tiene utilidad, por lo que ademas de impráctico es una mala decisión técnica.
+
+class Player {
+  name;
+}
+
+class Token {
+  position;
+}
+
+class Connect4 {
+  constructor() {
+    this.player = new Player()
+  }
+  play(position) {
+    const token = new Token(position)
+  }
+}
+```
+
+### 🪓 Hacking
+
+En una entrevista uno esta incentivado a escribir lo más rápido posible para llegar “lo más lejos posible”. Con ese fin, muchos programadores dejan un tendal de problemas, bugs, errores de diseño que, aun si logran cumplir los requerimientos de manera técnica, terminan en rechazo.
+
+<Callout emoji="💡">
+El código que se presenta en una entrevista tiene que ser presentado como **production-grade**. Tiene que pasar un code review de otro programador.
+
+</Callout>
+
+Casi todos los atajos se toman por velocidad, pero sacrifican las posibilidades de conseguir un Yes. Es mucho mejor una solución parcial bien hecha que una solución completa mal hecha.
+
+Si un entrevistador ve que un problema se resolvio al 50% bien hecha, puede deducir que el candidato es capaz de hacer el restante.
+Si ve que la entrega final esta mal hecha, no puede saber si el candidato es capaz de hacerlo bien. Es estricamente peor entregar algo de baja calidad completo, que de buena calidad incompleto.
+
+### 💬 **Jerga**
+
+La jerga de la industria te permite recordar y referenciar conceptos de lenguaje que son útiles para recordar y comunicar ideas de manera breve.
+
+Esto es especialmente cierto en conversaciones con americanos, donde referenciar el concepto te ahorra de dar largas explicaciones que pueden ser taxativas para alguien con Ingles como segundo idioma. La adopción de la jerga viene con el estudio.
+
+**Algunos ejemplos de términos para estudiar**
+
+- Legibility
+- Immutability
+- Cohesion / Dependency / Decoupling
+- Cyclomatic Complexity
+- Composable
+- Referentially Transparency
+- Self-documenting
+- Defensive Programming
+- Developer Context

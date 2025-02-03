@@ -1,0 +1,259 @@
+import { Resource } from '@components/resource';
+import { IREmbed } from '@components/embed';
+import { FilesIcon, LinkIcon } from '@components/icons';
+import { Callout, Cards, Steps } from 'nextra-theme-docs';
+
+# Entendiendo Perfiles & Seniority
+
+# 🪞Perfiles
+
+## 🔧 Mas allá de lo técnico
+
+El expertise técnico es la base de un perfil para una posición, pero cada empresa es un organismo, un ser vivo, que requiere de personas distintas.
+
+- ⚔️ **Especialización vs Generalista**
+    
+    Es sólo en empresas muy grandes que los perfiles pueden volverse repetidos, como figuritas en un album, porque hay una especialización por rol muy grande y sólo se necesita que hagan una parte chica de la disciplina.
+    
+    Para todos los otros casos, se quiere a una persona que cumpla algunas otras necesidades de la empresa además de la implementación. Puede ser hablar con clientes, hacer producto; tomar tareas técnicas fuera del comfort zone; aprender del dominio. Los perfiles de startup chica **necesariamente** necesitan perfiles versátiles porque no le dan las manos al equipo fundador para cubrir todo.
+    
+    > En CircleMedical hicimos una mudanza de la clínica. No había ni presupuesto ni tiempo para armar la oficina por nuestra cuenta. Varios de los empleados fuimos moviendo muebles y armando el espacio nosotros mismos.
+    > 
+- 🏠 **Ownership**
+    
+    La palabra que mejor define las necesidades de una startup es **ownership**.
+    
+    Siempre hay mucho mas trabajo por hacer del que se puede. Si no hay estructura hay que arremangarse y ponerse otros sombreros para cubrir el bache. Si hay estructura hay que tener el drive para empujar y superar a los bloqueos organizacionales que hacen que todo sea lento.
+    
+    La falta de ownership es un pecado capital en startups de todo tipo y programadores que no tengan historial o deseo de tomar responsabilidad van a tener un penalty significativo.
+    
+- 〰️ **Alinear preferencias**
+    
+    Los que buscan trabajo tienen preferencias y expectativas de lo que van a hacer y les será exigido con el tiempo, y también el impacto que tiene eso en su carrera de largo plazo.
+    
+    La alineación de lo que la persona quiere hacer es importante porque va a ser predictor de la energía y calidad del trabajo que hace.
+    
+    Una persona con orientación a producto se desmotiva en una empresa grande y burocrática, y una persona que quiere orden y carrera no la va a encontrar en una Seed luchando por supervivencia.
+    
+
+## 🇦🇷 El Perfil latinoamericano
+
+El perfil típico latinoamericano tiene desafíos de experiencia técnica y cultura que hace ruido y fricción en una startup americana.
+
+- Historial de Consultora
+    
+    El trabajo de consultora es muy dañino para los desarrolladores porque por mecánica no enseñan ownership.
+    
+    La consultora tiene techo de upside - no hay premios por traerle éxito al negocio como en una startup.
+    
+    Como no hay upside, la expectativa es mucho mas baja, y eso es el trade-off fundamental: **te piden menos, y te van a dar menos.**
+    
+    En una consultora **ownership** es que hiciste lo que te dijeron, es obediencia, no son resultados con impacto en la organización.
+    
+    Ademas en la consultora siempre hay un filtro fuerte del tipo de trabajo que te van a dar. Las empresas no le dan a las consultoras el negocio mas importante que tienen y eso a la larga te mata el perfil en un puesto competitivo.
+    
+- Startups Locales y Regionales
+    
+    La mayoría del aprendizaje se hace en el trabajo, y las empresas grandes tienden a darle la estructura de talento al mercado porque “entrenan” a miles de programadores.
+    
+    El talent pool regional es de mucha menor profundidad y menor formación académica que el americano. Las empresas exitosas regionales no pueden tener una estrategia de talento world-class a escala porque simplemente no existe.
+    
+    > Mercado libre emplea a 4500 programadores y Argentina tiene 23.000 graduados en la última década.
+    > 
+    
+    Las empresas regionales se basan en estructuras **muy grandes,** compensando faltante de formación y calidad con volumen. Equipos que en estados unidos son de 10 personas, en Argentina son de 50. Como manejar un equipo de 50 es muchisimo más caro a nivel organizacional (necesitas mas managers, mas operaciones, mas espacio de oficina, IT-support, etc), el ajuste de salarios es muy fuerte en comparación.
+    
+    El problema para el talento es que la experiencia en ese sistema te prepara para ese sistema - no para otros. Los perfiles de empresas como Globant o Mercado Libre hacen una fracción muy chica y entonces son abrumados por los requerimientos y expectativas de startups americanas.
+    
+    Las career ladders de estas empresas no se traducen, por lo que luego de suficiente tiempo pasado, es un retroceso de carrera ir de estas empresas a un track remoto.
+    
+    En corto:
+    
+    - Se aprende una fracción de lo esperado en el mercado americano
+    - Se aprenden skills que no son valiosos para el mercado
+    - Se compromete a un carreer path que requiere ser abandonado si no funciona
+- Team Lead & Eng.Manager
+    
+    Un descalce importante en Argentina son los roles de Lead y de Manager.
+    
+    En estados unidos un Lead es la persona que es referente dentro de un equipo. Puede ser el mas habilidoso, el que tiene mas conocimiento de dominio o que ejerce liderazgo por influencia. No necesariamente cobra mas, o no mucho mas. Y es un **rol** que te ganas desde adentro.
+    
+    En Latam muchas personas lo toman como un “Senior+” para cobrar mas y aplican a roles de lead o apuntan a eso en startups, pero no sirve. El lead se gana desde adentro.
+    
+    Los managers tambien tienen una gran diferencia. En LatAm los managers de primera linea dejan de codear, y hacen mas tareas de planificación. En estados unidos el manager de primera linea tiene que ser el top (o casi) técnico y tener contribuciones frecuentes. Esto genera un perfil de manager en argentina que es francamente incapaz de pasar entrevistas técnicas.
+    
+
+## 🇺🇸 Perfiles Americanos
+
+- 🪖 Startup Generalist
+    
+    El primer filtro general es sobre la independencia técnica. El caso emblemático es el Fullstack vs un perfil dedicado al frontend y al backend.
+    
+    La pregunta general es cual es la versatilidad técnica de la persona y si va a requerir tener a otra persona ayudándolo para trabajar efectivamente.
+    
+    Los perfiles de frontend tienen que saber lo suficiente de bases de datos, api design y backend para defenderse.
+    
+    > Frente a challenges de estructuras de datos, perfiles de frontend a veces se quejan de que “nunca hacen falta para el frontend y no deberia ser evaluado”. Pero se esta evaluando tambien tu capacidad de aprender y saber otras cosas. La incapacidad o el deseo de no hacerlos muestran falta de versatilidad.
+    > 
+    
+    La recomendación general para todos los perfiles de desarrollo es que aprendan lo básico de fullstack - si sos BE, aprender React. Si sos FE, aprende bases de datos y deployment.
+    
+    Mas allá de estos perfiles puntuales, suma mucho tener skills adjacentes a tu trabajo por la misma razón. Para los ojos del empleador, esta recibiendo **el doble de valor** cuando alguien sabe lo suficiente de dos perfiles, porque le evita una contratación más, aún cuando la cantidad de trabajo sea fija.
+    
+- 🏦 Product Engineer
+    
+    El rol mas valioso en startups es el programador que hace producto. Las empresas chicas no deben ni tienen product managers en sus primeros ciclos - el product manager es el CEO/founder.
+    
+    Eso significa que cada tarea de producto que no haga un desarrollador, lo tiene que hacer el founder que es el trabajador mas valioso de la empresa.
+    
+    <Callout emoji="💡">
+    
+    Los founders quieren perfiles a los que se le pueda delegar trabajo de producto. El programador que solo es capaz de autonomía técnica se queda corto de mejorar el revenue buscando oportunidades y mejoras.
+    
+    </Callout>
+    
+    El product engineer tiene sentido de producto, sabe mirar metricas y tiene ownership. Desarrolla intuiciones de lo que va a tener impacto en metricas que importan para el negocio. Habla directamente con los usuarios de los productos que hace. Te puede hablar del dominio, de la competencia, del mercado.
+    
+    Este rol es muy poco popular en argentina por la preponderancia de trabajo de consultora y por como se arman equipos, pero es un rol comun y deseable en estados unidos.
+    
+- ⚒️ Founding Engineer
+    
+    Los primeros hires de la startup a veces llevan el título de Founding. Las empresas que ponen este titulo estan buscando a alguien que se vaya a arremangar y hacer lo que sea necesario. La empresa no tiene casi nada de estructura - el producto puede cambiar. Capaz hay que hablar con clientes, negociar con un vendor, elegir un servicio, hacer customer support - lo que sea.
+    
+    La posición de Founding engineer es de extremo ownership y no es para cualquiera. En general la gente que apunta a este rol apunta a armar su propia empresa o producto luego. Nunca vas a aprender tanto de como armar una empresa que con este rol, que es basicamente participar en la construccion de una empresa.
+    
+- ✈️ Engineering Manager
+    
+    El Eng. Manager en estados unidos es casi siempre un técnico excelente que se pasa a management. Aunque hay un buen grupo de Managers no-técnicos, no esta bien visto que el manager sea un técnico promedio. Tiene que ser sobresaliente para liderar por influencia.
+    
+    Dado que el Eng. Manager tiene responsabilidades de hiring y team management, es muy improbable que un argentino remoto se vuelva manager de americanos si no entiende su cultura laboral ni le compite en habilidad técnica.
+    
+
+# 👴 Seniority
+
+## 🗾 Career Map
+
+| **Title** | **Experience** | **Responsibilities** | **Expected Performance** | **Industry Impact** |
+| --- | --- | --- | --- | --- |
+| Software Engineer I | 0-2 years (Entry-level) | - Contribute to specific features or bug fixes under guidance.Work within a well-defined scope. |  |  |
+- Learn company tools and processes. | - Deliver clean, testable code.
+- Ask for guidance proactively.
+- Display willingness to learn.
+- Work effectively in a team with mentorship support. | - No industry impact expected.
+- Focus is on building internal knowledge and contributing to team success. |
+| Software Engineer II | 2-5 years | - Take ownership of moderately complex components.
+- Collaborate across teams.
+- Provide input in design discussions. | - Deliver quality solutions with minimal oversight.
+- Write scalable, maintainable code.- Demonstrate growing independence in solving problems. | - Limited or no direct industry impact expected.
+- Contributions may indirectly enhance the Company product reputation or competitive positioning. |
+| Senior Software Engineer | 5-8 years | - Lead designs for complex features.
+- Mentor junior engineers.
+- Contribute to system-wide architecture discussions. | - Deliver significant project contributions.
+- Exhibit strong problem-solving skills.
+- Collaborate effectively across teams.
+- Act as a technical leader. | - Contributions begin to have industry relevance.
+- May publish technical blogs or patents.
+- Represent the Company at technical conferences or events occasionally. |
+| Staff Software Engineer | 8-12 years or more | - Drive system-wide architecture.
+- Lead cross-team efforts.
+- Act as a technical expert in a domain.
+- Influence product direction. | - Solve ambiguous and complex technical problems.
+- Consistently mentor peers.
+- Drive alignment and decisions across multiple stakeholders.
+- Set standards. | - Contributions have measurable industry-wide impact. Develop tools, frameworks, or standards adopted externally.
+- Regularly publish papers or present at conferences. |
+
+## 🧮 Climbing the Ladder
+
+En estados unidos en las empresas grandes se le da mucha atención a como escalar los niveles de la empresa. Es un juego un burocrático y político, pero tiene algunos componentes rescatables.
+
+Los managers de empresa grande se enfocan en armarte un plan de carrera de 1-2 años, con la idea de que tengas proyectos y desafíos para que desarrolles los skills y los resultados necesarios para promocionar.
+
+Esto puede ser un proyecto para expandir tu skill técnico, algo con más impacto, o sugerencias y asistencia para complementar falencias. Efectivamente, tu manager es tu **coach**.
+
+En Argentina esta dinámica casi no existe porque:
+
+1. Las consultoras no tienen ni career paths ni managers
+2. Las startups regionales tienen caminos únicos para ellos mismos
+3. Hay pocos casos de startups que hayan crecido a cientos y miles de programadores
+4. La startup americana que contrata en LatAm no tiene estructura, managers profesionales u oportunidades para fortalecer tus puntos debiles
+
+<Callout emoji="💡">
+
+Como remote engineer, tu carrera es tu problema. No va a venir sola ni te la van a mostrar. Vas a tener que tomar riendas de lo que te falta para pasar al siguiente nivel.
+
+</Callout>
+
+### ♻️ Traduciendo Seniority
+
+Cuando uno pasa de un sistema a otro siempre paga un costo por la traducción. Pero no se dimensiona bien la diferencia.
+
+Un SR de una consultora o startup regional no pasa la vara de semi-Sr de una empresa grande de estados unidos.
+
+Este efecto pasa dentro de estados unidos tambien. Un Staff engineer de una empresa desconocida no es reconocida por BigTech o startups de renombre.
+
+Por suerte, en las startups muy chicas no se hace foco en títulos y hay flexibilidad para adaptarse al impacto que tengas en el negocio. No importa ser Sr o Staff o Lead, lo que importa es el impacto que tengas en la startup. Esto es una salvación, porque las falencias comparados con experiencias americanas son bastante difíciles de cubrir.
+
+## ⚕️Senior Engineer
+
+Evaluar el seniority es complejo, pero hay dos grandes razones por las que perfiles con mas de 5 años de experiencia no matchean la expectativa de seniority que tienen muchas empresas americanas.
+
+### 🔨 Habilidades técnicas
+
+El mercado americano paga muy bien pero es muy competitivo. El graduado tiene que demostrar habilidad y potencial lo antes posible y para eso se preparan fuertemente para entrevistas.
+
+Las habilidades técnicas vienen de varias fuentes, desde perfeccionamiento constante, la calidad de los proyectos y los equipos en los que trabajas, pero mas que nada requiere una determinada cantidad de horas, foco y talento para llegar a cierto nivel de performance en una entrevista de código en vivo.
+En las empresas de alta categoría hasta los pasantes tienen que pasar ejercicios de live coding.
+En Argentina la mayoría de los Sr. Engineers nunca pasaron ni pasarán por este filtro, generando una distorsion muy fuerte entre la comparación de talento que solo se compensa del lado americano con una fuerte reduccion de expectativas salariales.
+
+<Callout emoji="💡">
+
+Un cliente real de [Silver.dev](http://silver.dev/) una vez me comento que candidatos con 8 años de experiencia no podia resolver un challenge de la empresa. Pero que los pasantes americanos que entrevistaron lo hacen sin problemas.
+
+</Callout>
+
+### ⬆️ Calidad de la Experiencia
+
+Otro gap grande es el tipo de problemas y ambientes a los que fue expuesto el talento. Por ejemplo:
+
+- Experiencia en productos con millones de usuarios
+- Experiencia en sistemas maduros con Oncall, CI, Infraestructura
+- Experiencia creando sistemas o productos desde 0
+- Experiencia trabajando con equipos americanos de alto rendimiento
+
+El ambiente americano tiene otro tipo de inversion en infraestructura, educacion y capital humano que da un abanico de experiencia mas grande y especial.
+
+## ⚕️Staff Engineers
+
+El rol de staff es muy incomprendido tanto en el mercado americano como el local. Para ser un Staff Engineer tenes que ser un contribuyente muy distinguido.
+
+El libro/blog [https://staffeng.com/book](https://staffeng.com/book) compila recursos amplios sobre esto. Durante la pandemia se inflaron mucho los roles de staff en USA, pero empresas que hayan
+
+mantenido el standard de expectativa no se impresionan por títulos sino por la excepcionalidad del perfil.
+
+Estas son algunas preguntas claves que tenes que poder responder convincentemente para pedir un titulo de Staff:
+
+- Producto
+    - Tenes un producto propio con usuarios ( i.e 50 mil DAU) y revenue (+50k anuales)?
+    - Creaste revenue para las empresas para las que trabajaste? (+ millones anuales)
+    - Levantaste fondos / inversiones? (Serie Seed)
+    - Tuviste tu propia empresa? (empleados, incorporacion, etc)
+- Influencia
+    - Sos un referente en la sub-industria en el que estas?
+    - Tenes una audiencia?
+    - Das charlas en conferencias? Representas a alguna empresa, tecnologia de manera pública?
+- Expertise
+    - Ganaste en competencias internacionales de programación, hackathons, premios y challenges públicos?
+    - Diseñaste e implementaste servicios desde 0 que llegaron a tener millones de usuarios?
+    - Tuviste a cargo un presupuesto de millones de dolares anuales en computadoras o equipo?
+    - Tenes un paquete / contribucion open source con mas de 1 millon de downloads?
+- Leadership
+    - Cuanta gente tuviste a cargo en un proyecto o equipo?
+    - Entrenaste a un developer desde early career a Sr?
+    - Alguna vez despediste o hiciste despedir a alguien?
+
+<Callout emoji="💡">
+
+Es altamente improbable conseguir staff sin logros destacados dentro y fuera de la empresa para la que trabajas.
+
+</Callout>

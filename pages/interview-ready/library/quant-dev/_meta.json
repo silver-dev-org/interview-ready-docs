@@ -1,0 +1,15 @@
+{
+  "black-scholes": "Black Scholes",
+  "option-chain-etl": "Option Chain ETL",
+  "ml-modeling": "ML Modeling & Quant Analysis",
+  "authors": {
+    "display": "hidden",
+    "values": [
+      {
+        "name": "Gabriel Benmergui",
+        "role": "Silver.dev Founder",
+        "href": "https://www.linkedin.com/in/gabriel-benmergui/"
+      }
+    ]
+  }
+}

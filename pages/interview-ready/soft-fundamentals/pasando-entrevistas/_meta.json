@@ -1,0 +1,17 @@
+{
+  "pasando-la-screening": "Guía de Screening Call",
+  "behavioral-preguntas-clasicas": "Behavioral I: Preguntas Clásicas",
+  "behavioral-storytelling": "Behavioral II: Storytelling",
+  "cultura-de-trabajo-americana": "Behavioral III: Cultura Americana",
+  "conectando-con-el-entrevistador": "Conectando con el Entrevistador", 
+  "authors": {
+    "display": "hidden",
+    "values": [
+      {
+        "name": "Gabriel Benmergui",
+        "role": "Silver.dev Founder",
+        "href": "https://www.linkedin.com/in/gabriel-benmergui/"
+      }
+    ]
+  }
+}

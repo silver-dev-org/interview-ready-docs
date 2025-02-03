@@ -1,0 +1,74 @@
+import { Resource } from '@components/resource';
+import { IREmbed } from '@components/embed';
+import { FilesIcon, LinkIcon } from '@components/icons';
+import { Callout, Cards, Steps } from 'nextra-theme-docs';
+
+# Code Reviewing
+
+## The Theory & Practice
+
+### General Programming 🎥
+
+- Functions
+    - Declarative Naming
+        - Name must imply side-effects if it has any (i.e. getValue changes the value
+    - Named Parameters
+    - Co-Location
+    - Size
+        - Avoid overuse of small functions. “Rule of 3”
+    - “Do one thing”
+    - Avoid side-effects
+- Variables & Control flow
+    - Declarative Variable Naming
+    - Avoid Magic Numbers
+    - Avoid comments - code as documentation
+    - Avoid while loops
+    - Avoid large Conditional clauses
+    - Variable scoping
+    - Do not modify inputs
+    - Cyclomatic Complexity
+        - Early returns
+        - Reduced boolean nexting
+- General Programming
+    - DRY & Leaky Abstractions
+    - Elegance & Taste
+    - Atomicity
+    - General over special case implementation
+    - Error handling
+        - Defensive programming
+        - Invariant programming
+        - Error Management
+            - Catch what you can handle
+            - Do not eat errors
+            - Re-throw errors only if useful
+    - Cohesion vs dependency
+    - Developer Context & Colocation
+        - File sizes
+        - Componentization vs Separation of Concerns
+
+### Paradigmas
+
+- Functional, Object, Imperative, Declarative
+    - Imperative programming is about sequentially giving instructions to a computer
+        - Globally scoped commands and variables
+        - Sequential execution
+        - No abstractions
+        - Very common in scripting
+    - Declarative is a way to write based on what you want to achieve
+        - It is mainly just a naming difference to an imperative programming
+    - OOP is good for complex systems that manage both state and behavior
+    - Functional programming
+        - Referential transparency
+            - Functions don’t have side-effects
+            - They always return the same on the same inputs
+        - Function composition and “wrapping” (High order functions)
+- OOP tips
+    - Naming
+    - Separation of concerns
+    - Privacy
+    - Reaching invalid states
+    - Composition over inheritance
+
+### Notes
+
+Language Idioms

@@ -1,33 +1,36 @@
-
-import { Resource } from '@components/resource';
-import { IREmbed } from '@components/embed';
-import { FilesIcon, LinkIcon } from '@components/icons';
-import { Callout, Cards, Steps } from 'nextra-theme-docs';
+import { Resource } from "@components/resource";
+import { IREmbed } from "@components/embed";
+import { FilesIcon, LinkIcon } from "@components/icons";
+import { Callout, Cards, Steps } from "nextra-theme-docs";
 
 # Candidate Guide
 
-Entrevistar bien define tu carrera. Para destacarte en el proceso de entrevistas y mejorar tus chances de conseguir más y mejores ofertas, preparamos una guía con materiales para todas las etapas de entrevistas en startups. Revisalo cuidadosamente para mejorar tu perfil frente a las empresas.
+El siguiente es un resumen de las entrevistas que podrías encontrar en tu proceso con Silver.dev. Estos recursos buscan ayudarte a entender costumbres, criterios de evaluación y mejores prácticas.
+
+Entrevistar bien define tu carrera. Las entrevistas no son un exámen: son una competencia. Poder prepararte te ayuda a dar tu mejor versión y tener la oportunidad de demostrar la totalidad de tu perfil.
 
 ## 0️⃣ Pre-Entrevista
 
-Los recruiters le pasamos a los clientes tu LinkedIn y Resume para que lo vean. Hay que tenerlos en el mejor estado posible aún luego de empezar un proceso de entrevista para mejorar tus chances.
+Tanto para el inicio de tu postulación en Silver.dev como para el proceso con la empresa, tu LinkedIn y CV son un recurso constante que sirve a los entrevistadores para entender tu perfil rápidamente. Hay que tener ambos en el mejor estado posible, aún luego de empezar un proceso de entrevista, para mejorar tus chances.
+
+👇 Compilamos un checklist para tener un LinkedIn excelente, otro checklist para tener un CV excelente, y una tool para que puedas iterar tu CV con correcciones típicas.
 
 <Cards>
-<Cards.Card
-icon={<LinkIcon />}
-title="LinkedIn Checklist"
-href="/interview-ready/soft-fundamentals/consiguiendo-entrevistas/preparando-linkedin#linkedin-checklist"
-/>
-<Cards.Card
-icon={<LinkIcon />}
-title="CV Checklist"
-href="/interview-ready/soft-fundamentals/consiguiendo-entrevistas/preparando-el-cv#cv-checklist"
-/>
-<Cards.Card
-icon={<LinkIcon />}
-title="Resume Checker"
-href="https://resume.silver.dev/"
-/>
+  <Cards.Card
+    icon={<LinkIcon />}
+    title="LinkedIn Checklist"
+    href="/interview-ready/soft-fundamentals/consiguiendo-entrevistas/preparando-linkedin#linkedin-checklist"
+  />
+  <Cards.Card
+    icon={<LinkIcon />}
+    title="CV Checklist"
+    href="/interview-ready/soft-fundamentals/consiguiendo-entrevistas/preparando-el-cv#cv-checklist"
+  />
+  <Cards.Card
+    icon={<LinkIcon />}
+    title="Resume Checker"
+    href="https://resume.silver.dev/"
+  />
 </Cards>
 
 ## 1️⃣ Recruiter & Company Screenings
@@ -35,16 +38,16 @@ href="https://resume.silver.dev/"
 Antes de hablar con un recruiter de Silver.dev, revisá atentamente la guía de Screening Call. Cualquier problema de ambiente o setup te puede sacar de la lista de candidatos preferidos.
 
 <Cards>
-<Cards.Card
-icon={<LinkIcon />}
-title="Trabajando con Recruiters"
-href="/interview-ready/soft-fundamentals/interview-meta/trabajando-con-recruiters"
-/>
-<Cards.Card
-icon={<LinkIcon />}
-title="Screening Call Checklist"
-href="/interview-ready/soft-fundamentals/pasando-entrevistas/guia-de-screening#screening-call-checklist"
-/>
+  <Cards.Card
+    icon={<LinkIcon />}
+    title="Trabajando con Recruiters"
+    href="/interview-ready/soft-fundamentals/interview-meta/trabajando-con-recruiters"
+  />
+  <Cards.Card
+    icon={<LinkIcon />}
+    title="Screening Call Checklist"
+    href="/interview-ready/soft-fundamentals/pasando-entrevistas/guia-de-screening#screening-call-checklist"
+  />
 </Cards>
 
 Además, no solo hay que presentarse bien, sino que hay que tener listas las historias personales para explicar la profundidad y calidad de tu experiencia profesional. Lo que no se comunica, en el contexto de entrevistas, no existe.
@@ -64,47 +67,87 @@ href="/interview-ready/soft-fundamentals/pasando-entrevistas/behavioral-storytel
 />
 
 <Cards.Card
-icon={<LinkIcon />}
-title="Podcast: Narrativa Personal"
-target="_blank"
-rel="noopener noreferrer"
-href="https://open.spotify.com/episode/71C5tVCE3xdMTC8aJroWpS?si=m3kfFLrjT9O2AEeYRAFDTg&nd=1&dlsi=ee5f9adc306b453a"
+  icon={<LinkIcon />}
+  title="Podcast: Narrativa Personal"
+  target="_blank"
+  rel="noopener noreferrer"
+  href="https://open.spotify.com/episode/71C5tVCE3xdMTC8aJroWpS?si=m3kfFLrjT9O2AEeYRAFDTg&nd=1&dlsi=ee5f9adc306b453a"
 />
 <Cards.Card
-icon={<LinkIcon />}
-title="Behavioral Interviews III: Cultura Americana"
-href="/interview-ready/soft-fundamentals/pasando-entrevistas/behavioral-cultura-americana"
+  icon={<LinkIcon />}
+  title="Behavioral Interviews III: Cultura Americana"
+  href="/interview-ready/soft-fundamentals/pasando-entrevistas/behavioral-cultura-americana"
 />
 
 </Cards>
 
 ## 2️⃣ Live Coding Interviews
 
-### Challenges de backend
+La entrevista de live coding permite observar la fluidez en el stack relacionado al rol, tu capacidad de debugging en tiempo real, y tus habilidades de comunicación técnica. Estas tres están fuertemente relacionadas entre sí: los aciertos o errores en una dimensión afectan a las demás.
 
-Recomendamos que prepares tu propio ambiente para ejecutar scripts, sin necesidad de instalar paquetes o frameworks de ningún tipo.
-Podés practicar resolviendo el challenge de este video: [Connect 4](https://docs.silver.dev/interview-ready/profile-mastery/backend/connect4) en el [Repo](https://github.com/silver-dev-org/interview-ready/blob/main/technical-fundamentals/coding/connect4.mjs)
+La mejor manera de balancear estos skills es hacer entrevistas de live coding, o en su defecto, grabarse a uno mismo imitando una live coding. Esta es una entrevista simple, pero solo si tenés la preparación correcta. Los enunciados son sencillos, las condiciones de la entrevista no.
 
-### Challenges de frontend
+⭐ Tips para tener una buena entrevista:
 
-Vamos a usar un [Codesandbox](https://codesandbox.io/) - recomendamos que te hagas una cuenta en la plataforma y la pruebes para estar cómodo para la entrevista.
-Practicá haciendo el [Sign-up form.](/interview-ready/profile-mastery/frontend/react-signup-form).
+1. La forma de demostrar excelencia en este challenge es solucionando estrictamente el problema enunciado, lo más rápido posible. La simplicidad es elegante
+2. Es normal sentir nervios o incomodidad! Sucede en cualquier contexto donde uno es puesto a prueba. La práctica ayuda a mitigar la sensación
+3. Tu comunicación debería ayudar al entrevistador a entender tu modelo de pensamiento. No se trata de leer código en voz alta, sino de narrar las decisiones que se toman y los problemas que se detectan
+4. Resolvé las partes fáciles del desafío lo más rápido posible: ganá tiempo para afrontar con tranquilidad la sección más complicada de la entrevista
+5. Iniciá la entrevista con un breve plan de acción, tratá de identificar la sección compleja del challenge desde el inicio. Usá esto para romper el hielo con el entrevistador
+6. Probá tu código constantemente, a cada paso de tu plan de acción
+7. Practicá argumentar de manera rápida y concisa tus decisiones. El entrevistador puede elegir consultarte sobre algo específico y deberías poder llevar este intercambio con tranquilidad
 
+🖐️ Aclaraciones generales sobre esta entrevista:
+
+1. El enunciado del challenge es estricto. Típicamente hay que completar todo lo requerido salvo que el entrevistador indique lo contrario
+2. El tiempo de la entrevista es estricto. Tu objetivo debe ser finalizar lo antes posible para evitar sorpresas o hechos aleatorios
+3. Dado que se evalúa fluidez en el stack, no se permite copiar código
+4. La comunicación es importante, pero no reemplaza un challenge completo
+5. Es raro no encontrarte con errores durante tu implementación, por lo cual tener comodidad resolviendo bugs es un factor importante!
+
+💭 En base a lo anterior, algunas implicancias:
+
+1. No completar el enunciado a tiempo típicamente resultaría en un "no"
+2. Extender o malinterpretar el enunciado típicamente resultaría en un "no"
+3. El resultado de no probar tu código constantemente suele ser encontrar múltiples bugs confusos en los últimos minutos de la entrevista, lo cual típicamente resultaría en un "no"
+4. Sin importar lo "elegante" o complejo de la solución, si esta no funciona, la entrevista típicamente resultaría en un "no"
+5. Completar el enunciado en completo silencio puede resultar en un "no"
+6. Las skills más efectivas para aprobar este challenge están relacionadas a velocidad e intuición (WPM, debugging, fluency, etc), ya que te dan margen de tiempo para manejar cómodamente cuestiones aleatorias de la entrevista
+
+Dicho lo anterior, hay excepciones y reglas que se pueden romper. Hacerlo de forma correcta requiere total mastery en este formato y máxima empatía con el entrevistador. Ante la duda, ejecutá la práctica recomendada y conversá con el entrevistador para validar criterios.
+
+Al ser una entrevista de corta duración, esta entrevista **NO** se enfoca en evaluar diseño de arquitectura ni conocimiento de librerías (salvo que sea explícitamente solicitado en el challenge). Para estos factores existen entrevistas como el Takehome Challenge.
+
+### [Silver.dev] Challenge: Frontend
+
+Es un challenge de _30 minutos_ en [Codesandbox](https://codesandbox.io/) - recomendamos que te hagas una cuenta en la plataforma y la pruebes para estar cómodo para la entrevista.
+
+Mirá cómo luce un intento válido de esta entrevista en el siguiente video: [React Sign-up Form](/interview-ready/profile-mastery/frontend/react-signup-form). Encontrá el enunciado en nuestro [repo](https://github.com/silver-dev-org/interview-ready/blob/main/profile-specific-challenges/frontend/pages/challenges/signup.js).
+
+### [Silver.dev] Challenge: Backend
+
+Es un challenge de _30 minutos_ en [Coderbyte](https://coderbyte.com/) - recomendamos que prepares tu propio ambiente para ejecutar scripts, sin necesidad de instalar paquetes o frameworks de ningún tipo.
+
+Mirá cómo luce un intento válido de esta entrevista en el siguiente video: [Javascript Connect4](https://docs.silver.dev/interview-ready/profile-mastery/backend/connect4). Encontrá el enunciado en nuestro [repo](https://github.com/silver-dev-org/interview-ready/blob/main/technical-fundamentals/coding/connect4.mjs).
+
+### Company Challenge**************\*\*\*\***************
+
+El desafío de live coding con la empresa varía según el seniority del rol y la competitividad del proceso de la empresa.
 Podés encontrar más ejercicios en [Interview Ready](/interview-ready) y en el [repo de Silver.dev](https://github.com/conanbatt/interview-practice).
 
 <Cards>
-<Cards.Card
-icon={<LinkIcon />}
-title="Interview Ready"
-href="/interview-ready"
-/>
-<Cards.Card
-icon={<LinkIcon />}
-title="Repositorio de Silver.dev"
-target="_blank"
-rel="noopener noreferrer"
-href="https://github.com/conanbatt/interview-practice"
-/>
+  <Cards.Card
+    icon={<LinkIcon />}
+    title="Interview Ready"
+    href="/interview-ready"
+  />
+  <Cards.Card
+    icon={<LinkIcon />}
+    title="Repositorio de Silver.dev"
+    target="_blank"
+    rel="noopener noreferrer"
+    href="https://github.com/conanbatt/interview-practice"
+  />
 </Cards>
 
 ## 3️⃣ Takehome Challenges
@@ -112,11 +155,11 @@ href="https://github.com/conanbatt/interview-practice"
 Para ganar en una entrega de takehomes hay que hacer más de lo esperado más rápido que el resto.
 
 <Cards>
-<Cards.Card
-icon={<LinkIcon />}
-title="Guía de Takehomes"
-href="/interview-ready/technical-fundamentals/code-quality/guia-de-takehomes"
-/>
+  <Cards.Card
+    icon={<LinkIcon />}
+    title="Guía de Takehomes"
+    href="/interview-ready/technical-fundamentals/code-quality/guia-de-takehomes"
+  />
 </Cards>
 
 ## 4️⃣ System Design Interviews
@@ -128,11 +171,11 @@ Estas entrevistas se hacen casi exclusivamente en inglés y por eso es necesario
 Aprovechá todos los recursos recomendados, los materiales extendidos y la Guía de System Design.
 
 <Cards>
-<Cards.Card
-icon={<LinkIcon />}
-title="Guía de System Design"
-href="/interview-ready/technical-fundamentals/system-design/open-sea#guía-de-system-design"
-/>
+  <Cards.Card
+    icon={<LinkIcon />}
+    title="Guía de System Design"
+    href="/interview-ready/technical-fundamentals/system-design/open-sea#guía-de-system-design"
+  />
 </Cards>
 
 ## 5️⃣ Negotiation & Offer Stage

@@ -1,23 +1,25 @@
-import { Resource } from '@components/resource';
-import { IREmbed } from '@components/embed';
-import { FilesIcon, LinkIcon } from '@components/icons';
-import { Callout, Cards, Steps } from 'nextra-theme-docs';
+import { Resource } from "@components/resource";
+import { IREmbed } from "@components/embed";
+import { FilesIcon, LinkIcon } from "@components/icons";
+import { Callout, Cards, Steps } from "nextra-theme-docs";
 
 # System Design Meta
 
-Muchos productos llegan a tener una escala o complejidad donde desafíos de infraestructura y de sistemas son concretos y reales. 
+Muchos productos llegan a tener una escala o complejidad donde desafíos de infraestructura y de sistemas son concretos y reales.
 
 Las empresas que ponen un system design en su proceso de entrevista estan filtrando para ver perfiles que vayan a poder entender, mantener y resolver problemas que tengan esta naturaleza.
 
-<IREmbed src="https://www.youtube.com/embed/MHyvYBaSTPQ?si=7x0u24v5cjsKiJlV"/>
+<IREmbed src="https://www.youtube.com/embed/MHyvYBaSTPQ?si=7x0u24v5cjsKiJlV" />
 
 ## 🎯 El Objetivo
 
 ### 🤺 Desafíos reales
 
-En Robinhood, por ejemplo, yo tenia problemas de este estilo todos los quarters, en todos los equipos en los que participaba.  En OpenSea practicamente me dedique a problemas de arquitectura para frontend. 
+En Robinhood, por ejemplo, yo tenia problemas de este estilo todos los quarters, en todos los equipos en los que participaba. En OpenSea practicamente me dedique a problemas de arquitectura para frontend.
 
 Las empresas quieren saber si el perfil tiene el conocimiento suficiente para proponer, evaluar e implementar soluciones que requieran cambios de infraestructura simplemente para compatibilizar con la dinámica de trabajo en una empresa.
+
+En la plataforma [HelloInterview](https://www.hellointerview.com/) podés practicar para esta entrevista en específico, con o sin entrevistadores reales. Es paga, pero tiene un challenge gratuito: [Bit.ly](https://www.hellointerview.com/practice/system-design/cmh10dwcb00y307adjz132feh?q=non-functional-requirements). Te recomendamos hacer este challenge y considerar pagar sesiones de práctica en HelloInterview según qué tan fuerte sea este filtro en las posiciones que te interesan.
 
 ### 🏫 La dificultad de aprenderlo
 
@@ -25,20 +27,20 @@ Cada sistema es orgánico a cada empresa. Adquirir experiencia práctica depende
 
 Ademas, aprender por tu cuenta estas herramientas es una mezcla de costoso e ineficiente. Es barato armarse una prueba, pero sin un problema a resolver, ni ver como se comportan con gran volumen, es difícil tener experiencia práctica real de como se rompen o se comportan distintas areas de una infraestructura.
 
-Sin experiencia práctica, solo podes aprenderlo de manera teórica. IR no es un programa tan extenso como para explicar todo esto pero si recomendamos materiales en SilverEd, como Grokking The System Design interview. 
+Sin experiencia práctica, solo podes aprenderlo de manera teórica. IR no es un programa tan extenso como para explicar todo esto pero si recomendamos materiales en SilverEd, como Grokking The System Design interview.
 
 <Callout emoji="💡">
-El objetivo de Interview Ready con system design enseñar el formato y el flow de la entrevista - que puedas presentar tu conocimiento de manera efectiva. 
+El objetivo de Interview Ready con system design enseñar el formato y el flow de la entrevista - que puedas presentar tu conocimiento de manera efectiva.
 
 </Callout>
 
 ### 🔎 La dificultad de evaluarlo
 
-De la misma manera que es incomodo practicarlo es incómodo evaluarlo. Armar un challenge que requiera utilizar system design seria complejo de mantener, y aun asi podria cubrir una parte tan chica de la experiencia de un programador que daria falsos negativos y positivos fácilmente. 
+De la misma manera que es incomodo practicarlo es incómodo evaluarlo. Armar un challenge que requiera utilizar system design seria complejo de mantener, y aun asi podria cubrir una parte tan chica de la experiencia de un programador que daria falsos negativos y positivos fácilmente.
 
 Como no se evalúa la experiencia concreta con ciertas tecnologías, se usan otros puntos como:
 
-1. La experiencia real con este **tipo de problemas.** 
+1. La experiencia real con este **tipo de problemas.**
 2. La capacidad de comunicar ideas para explicar y persuadir en concepts técnicos
 3. Las bases teóricas fundacionales para tomar decisiones en problemas nuevos
 
@@ -48,10 +50,10 @@ Como no se evalúa la experiencia concreta con ciertas tecnologías, se usan otr
 
 Las startups Seed o serie A suelen no tener problemas de system design porque sus sistemas son chicos. No tienen volumen de millones de usuarios y las herramientas modernas de infra escalan bien hasta grandes voluménes.
 
-Son las empresas en etapa de growth/scale en la que los problemas son mas de volumen que de diseño de aplicación. 
+Son las empresas en etapa de growth/scale en la que los problemas son mas de volumen que de diseño de aplicación.
 
 <Callout emoji="💡">
-La entrevista estándar Serie B+ **siempre** tiene una system design. 
+La entrevista estándar Serie B+ **siempre** tiene una system design.
 
 </Callout>
 
@@ -66,38 +68,28 @@ De los procesos de entrevistas propios y de mi cartera, veo que dependiendo del 
 Yo reconozco **tres escuelas** de entrevistadores:
 
 - El Teórico
-    
-    Muchos entrevistadores tienen un perfil académico o simplemente no tienen experiencia real en los sistemas. Estos entrevistadores te evaluán con lo que saben: la teoría.
-    
-    Típicamente el teórico te va a decir que tus decisiones son correctas si hay materiales publicos que digan que eso es lo correcto. 
-    
-    Por ejemplo, en la system design de armar una chat app famosamente se usa una key-value store. Un teórico espera esa respuesta de tu parte, o al menos esa consideración. Si sólo mencionas una base de datos SQL, puede concluir que te falta estudio.
-    
-    Al teórico hay que mostrarle que sabes de teoría - de que es lo que “dicen los libros”
-    
+  Muchos entrevistadores tienen un perfil académico o simplemente no tienen experiencia real en los sistemas. Estos entrevistadores te evaluán con lo que saben: la teoría.
+  Típicamente el teórico te va a decir que tus decisiones son correctas si hay materiales publicos que digan que eso es lo correcto.
+  Por ejemplo, en la system design de armar una chat app famosamente se usa una key-value store. Un teórico espera esa respuesta de tu parte, o al menos esa consideración. Si sólo mencionas una base de datos SQL, puede concluir que te falta estudio.
+  Al teórico hay que mostrarle que sabes de teoría - de que es lo que “dicen los libros”
 - El pragmático
-    
-    Los programadores con experiencia real armando sistemas saben que no saben. Saben que la aplicación de libro se choca con la realidad, y que hay que tener reticencia por seguir una guía dura.
-    
-    Los pragmáticos buscan versatilidad. Que puedas considerar opciones varias sin ser dogmático sobre que hacer, porque la realidad te va a arruinar tus planes. 
-    
-    Esto no es lo mismo que mostrar duda o incertidumbre. Vos tenés que ser asertivo siempre en tus recomendaciones y con la capacidad de cambiarlas en base a observaciones actuales o eventuales.
-    
+  Los programadores con experiencia real armando sistemas saben que no saben. Saben que la aplicación de libro se choca con la realidad, y que hay que tener reticencia por seguir una guía dura.
+  Los pragmáticos buscan versatilidad. Que puedas considerar opciones varias sin ser dogmático sobre que hacer, porque la realidad te va a arruinar tus planes.
+  Esto no es lo mismo que mostrar duda o incertidumbre. Vos tenés que ser asertivo siempre en tus recomendaciones y con la capacidad de cambiarlas en base a observaciones actuales o eventuales.
 - El problem solver / el auténtico (”Elon Style”)
-    
-    El entrevistador que busca autenticidad quiere tener una conversación con vos y ver lo que va a ser resolver problemas de este tipo con vos. Elon famosamente hace preguntas trampa para que “pises el palito” mintiendo o guitarreando.
-    
-    <aside>
-    💡
-    
-    Si le guitarreas lo más mínimo a este tipo de entrevistador y lo percibe, estas 100% out del proceso con un **Strong No**.
-    
-    </aside>
-    
-    En este tipo de entrevista no hay ventana de humo que te salve. Tenés que estar dispuesto a ir profundo y a los detalles en todo lo que pase porque es lo que busca hacer el entrevistador. Si mencionas una base de datos, tenes que poder defender como se usa y para que sirve, porque si la elegiste sin entenderla, estas out.
-    
-    El objetivo del entrevistador ver como pensas y resolves un problema que no conoces, que no tenes entrenado, o que no entendes bien y que podes tener un dialogo honesto al respecto.
-    
+  El entrevistador que busca autenticidad quiere tener una conversación con vos y ver lo que va a ser resolver problemas de este tipo con vos. Elon famosamente hace preguntas trampa para que “pises el palito” mintiendo o guitarreando.
+  {" "}
+  <aside>
+    💡 Si le guitarreas lo más mínimo a este tipo de entrevistador y lo percibe,
+    estas 100% out del proceso con un **Strong No**.
+  </aside>
+  En este tipo de entrevista no hay venta de humo que te salve. Tenés que estar dispuesto
+  a ir profundo y a los detalles en todo lo que pase porque es lo que busca hacer
+  el entrevistador. Si mencionas una base de datos, tenes que poder defender como
+  se usa y para que sirve, porque si la elegiste sin entenderla, estas out. El objetivo
+  del entrevistador ver como pensas y resolves un problema que no conoces, que no
+  tenes entrenado, o que no entendes bien y que podes tener un dialogo honesto al
+  respecto.
 
 ### 🖥️ Mis entrevistas
 

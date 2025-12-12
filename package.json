@@ -20,7 +20,7 @@
   "homepage": "https://github.com/shuding/nextra-docs-template#readme",
   "dependencies": {
     "@svgr/webpack": "^8.1.0",
-    "next": "13.0.6",
+    "next": "^15.5.9",
     "next-sitemap": "^4.2.3",
     "nextra": "latest",
     "nextra-theme-docs": "latest",

@@ -4,13 +4,10 @@
   },
   "english": {
     "title": "English"
-  },  
-  "quant-dev": {
-    "title": "Quant Dev"
   },
   "career": {
     "title": "Career"
-  },  
+  },
   "authors": {
     "display": "hidden",
     "values": [

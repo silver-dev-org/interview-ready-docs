@@ -1,0 +1,14 @@
+{
+  "connect4": "Connect 4",
+  "react-signup-form": "React Sign-up Form",
+  "authors": {
+    "display": "hidden",
+    "values": [
+      {
+        "name": "Gabriel Benmergui",
+        "role": "Silver.dev Founder",
+        "href": "https://www.linkedin.com/in/gabriel-benmergui/"
+      }
+    ]
+  }
+}

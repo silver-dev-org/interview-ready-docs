@@ -1,0 +1,15 @@
+{
+  "react-idioms": "React Idioms",
+  "react-hooks": "React Hooks",
+  "promises": "Promises",
+  "authors": {
+    "display": "hidden",
+    "values": [
+      {
+        "name": "Gabriel Benmergui",
+        "role": "Silver.dev Founder",
+        "href": "https://www.linkedin.com/in/gabriel-benmergui/"
+      }
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "career": {
+    "title": "Career"
+  },
+  "quant-dev": {
+    "title": "Quant Dev"
+  },
+  "quizzes": {
+    "title": "Quizzes"
+  },
+  "english": {
+    "title": "English"
+  },
+  "authors": {
+    "display": "hidden",
+    "values": [
+      {
+        "name": "Gabriel Benmergui",
+        "role": "Silver.dev Founder",
+        "href": "https://www.linkedin.com/in/gabriel-benmergui/"
+      }
+    ]
+  }
+}

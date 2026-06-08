@@ -1,0 +1,18 @@
+{
+  "evaluando-ofertas": "Evaluando Equities & Ofertas",
+  "negociando-salarios": "Negociando Salarios",
+  "carreras-exponenciales": "Carreras Exponenciales",
+  "evaluando-empresas": "Evaluando Empresas",
+  "perfiles-y-seniority": "Entendiendo Perfiles y Seniority",
+  "entendiendo-consultoras": "Entendiendo a las Consultoras",
+  "authors": {
+    "display": "hidden",
+    "values": [
+      {
+        "name": "Gabriel Benmergui",
+        "role": "Silver.dev Founder",
+        "href": "https://www.linkedin.com/in/gabriel-benmergui/"
+      }
+    ]
+  }
+}

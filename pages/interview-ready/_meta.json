@@ -1,18 +1,42 @@
 {
   "index": {
-    "title": "ℹ️ Introducción"
+    "title": "ℹ Introducción"
   },
-  "soft-fundamentals": {
-    "title": "👨🏻‍💼 Soft Skills Fundamentals"
+  "consiguiendo-entrevistas": {
+    "title": "Consiguiendo Entrevistas"
   },
-  "technical-fundamentals": {
-    "title": "👨🏻‍💻 Technical Fundamentals"
-  }, 
-  "profile-mastery": {
-    "title": "🎩 Profile Mastery"
+  "recruiter-screening": {
+    "title": "Recruiter Screening"
   },
-  "library": {
-    "title": "💿 Library"
+  "hiring-manager-screening": {
+    "title": "Hiring Manager Screening"
+  },
+  "takehomes": {
+    "title": "Takehomes"
+  },
+  "live-coding": {
+    "title": "Intro a Live Coding & Automated Challenges"
+  },
+  "entrevistas-silver-dev": {
+    "title": "Entrevistas de Silver.dev"
+  },
+  "data-structures-algorithms": {
+    "title": "Data Structures & Algorithms"
+  },
+  "frontend-challenges": {
+    "title": "Frontend Challenges"
+  },
+  "system-design-interviews": {
+    "title": "System Design Interviews"
+  },
+  "manejando-ofertas": {
+    "title": "Manejando Ofertas"
+  },
+  "advanced-leetcode": {
+    "title": "Advanced Leetcode"
+  },
+  "career-and-library": {
+    "title": "Career & Library"
   },
   "authors": {
     "display": "hidden",

@@ -1,7 +1,7 @@
 {
-  "connect4": "Connect 4",
-  "react-signup-form": "React Sign-up Form",
-  "ai-adoption": "AI Adoption",
+  "interview-overview": "AI-Fluent Live Coding: Interview Overview",
+  "execution-system": "AI-Fluent Live Coding: Execution System",
+  "evaluation-criteria": "AI-Fluent Live Coding: Evaluation Criteria",
   "authors": {
     "display": "hidden",
     "values": [

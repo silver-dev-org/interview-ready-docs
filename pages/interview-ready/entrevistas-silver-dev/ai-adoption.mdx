@@ -1,0 +1,75 @@
+import { Callout } from 'nextra-theme-docs';
+
+# AI Adoption
+
+AI Adoption es una entrevista de Silver.dev para evaluar cómo trabajás con IA en una situación técnica real. No queremos saber si podés repetir una opinión sobre AI, sino si podés usarla para avanzar, tomar decisiones y seguir siendo dueño del resultado.
+
+El formato es deliberadamente abierto. Si te diéramos todos los requerimientos convertidos en un prompt perfecto, estaríamos evaluando nuestro prompt. En esta entrevista queremos ver el tuyo.
+
+## Por qué este formato
+
+La entrevista se parece más a un feature challenge que a una consigna tradicional de live coding. Hay un objetivo concreto, pero la señal principal aparece en el camino:
+
+- Cómo convertís una consigna ambigua en instrucciones ejecutables.
+- Qué herramientas tenés preparadas antes de empezar.
+- Cómo reaccionás cuando un agent se equivoca, pregunta de más o pierde foco.
+- Cómo integrás código generado sin perder entendimiento.
+
+Un candidato fuerte no necesita que el entrevistador le entregue un sistema perfecto. Puede tomar una consigna imperfecta, abrir su entorno, elegir una herramienta y empujar el problema hacia una solución.
+
+<Callout emoji="💡">
+  La entrevista no evalúa si tenés acceso a la mejor herramienta del mercado. Evalúa si tenés criterio para trabajar bien con las herramientas que elegiste.
+</Callout>
+
+## Live coding primero, AI después
+
+Esta es una live coding con AI. Primero es una live coding, después es con AI.
+
+Eso significa que siguen importando las mismas cosas de siempre: entender el problema, comunicar decisiones, escribir código correcto, validar la solución y administrar el tiempo. La IA cambia las tácticas, no la estrategia.
+
+Lo que cambia:
+
+- Podés delegar exploración, scaffolding, tests o cambios repetitivos.
+- Podés trabajar con más de una hipótesis en paralelo.
+- Podés moverte más rápido si el problema está bien encuadrado.
+
+Lo que no cambia:
+
+- Tenés que entender el código final.
+- Tenés que detectar cuando la solución se está desviando.
+- Tenés que priorizar el problema real por encima de la demostración de tooling.
+
+Para la base de live coding, seguí entrenando los fundamentos de [Automated Challenges](/interview-ready/live-coding/automated-challenges) y práctica cronometrada. AI fluency se construye encima de eso, no lo reemplaza.
+
+## Qué queremos ver
+
+Buscamos señales concretas de trabajo profesional con AI.
+
+- **Setup:** llegás con editor, terminal, agents, modelos, permisos y credenciales listos.
+- **Prompting:** sabés transformar una consigna abierta en una tarea clara, acotada y verificable.
+- **Control:** monitoreás al agent, corregís dirección y cortás la sesión cuando empieza a derivar.
+- **Resourcefulness:** tenés alternativas si una herramienta falla, se queda sin contexto o produce mala calidad.
+- **Ownership:** podés explicar y modificar el resultado sin depender del transcript.
+
+El peor uso de AI en una entrevista es quedarse mirando una pantalla mientras la herramienta decide. El mejor uso es tratarla como aceleración bajo supervisión.
+
+## Cómo prepararte
+
+Prepará tu sistema antes de la entrevista. No improvises tu workflow en vivo.
+
+1. Tené al menos dos proveedores o suscripciones disponibles: OpenAI, Anthropic, opencode, Cursor, Claude Code o el stack que uses.
+2. Tené al menos dos formas de ejecutar agents: por ejemplo, un CLI agent y un editor con AI integrado.
+3. Configurá permisos para evitar bloqueos constantes por `allow once`, confirmaciones repetidas o prompts de seguridad que no leíste antes.
+4. Prepará un `AGENTS.md` o equivalente con tus preferencias, pero asegurate de que no empuje al agent a un modo demasiado lento para entrevista.
+5. Practicá reiniciar una sesión con un prompt mejor cuando el agent se desordena.
+6. Practicá tomar el control manualmente cuando ya sabés qué cambio hay que hacer.
+
+La velocidad de tipeo sigue importando. Si la herramienta se cae, si el modelo queda lento o si el agent genera algo incorrecto, tu capacidad de leer y escribir código rápido define cuánto margen tenés para recuperarte.
+
+## Takeaways
+
+- **Sé resourceful:** prepará herramientas de respaldo y no dependas de una sola sesión.
+- **Sé urgente:** no dejes que permisos, follow-ups vagos o agents sin supervisión consuman el reloj.
+- **Sé directo:** resolvé el problema primero. Si sobra tiempo, ahí podés mostrar polish, arquitectura o tooling.
+
+La mejor señal en AI Adoption es simple: usás AI para moverte más rápido, pero el entrevistador nunca duda de que el ingeniero sos vos.

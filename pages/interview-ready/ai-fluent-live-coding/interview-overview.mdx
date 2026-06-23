@@ -1,0 +1,67 @@
+import { Callout } from 'nextra-theme-docs';
+
+# AI-Fluent Live Coding: Interview Overview
+
+Duración estimada: 2 min.
+
+Esta sección prepara candidatos para entrevistas donde el uso de AI está permitido, esperado o evaluado indirectamente. El objetivo no es aprender a "vibe codear". El objetivo es demostrar que podés usar AI sin dejar de ser el ingeniero a cargo.
+
+## Cómo leer esta sección
+
+Este módulo tiene una parte táctica: cómo usar agents, prompts, tests y revisión bajo presión de tiempo. Pero también tiene una parte behavioral.
+
+Las empresas están intentando entender si los candidatos las van a ayudar a adoptar AI, o si la empresa va a tener que ayudarlos a ellos a ponerse al día.
+
+Ese cambio no vive solo en coding. Preparar una presentación con AI, generar material de estudio, revisar documentación, analizar entrevistas o mejorar un workflow interno son señales de la misma mentalidad: hay nuevas formas de producir, y algunas ventanas para impresionar se cierran rápido porque después se vuelven baseline.
+
+## Objetivo
+
+Una entrevista AI-fluent busca responder una pregunta concreta: ¿podés convertir herramientas nuevas en mejor ejecución técnica?
+
+La señal no está solo en llegar a una solución. Está en cómo definís el problema, qué delegás, qué revisás, cuándo frenás al agent y cómo defendés el resultado final.
+
+<Callout emoji="💡">
+  AI fluency no es escribir prompts largos. Es saber cuándo acelerar, cuándo inspeccionar y cuándo volver al código con tus propias manos.
+</Callout>
+
+## You Are Here
+
+Steve Yegge popularizó la imagen de los estadios de evolución del developer con AI en [Welcome to Gas Town](https://steve-yegge.medium.com/welcome-to-gas-town-4f25ee16dd04). La imagen es útil porque no pregunta qué herramienta está de moda, sino dónde estás parado vos.
+
+![Estadios de evolución de developers con AI según Steve Yegge](/images/yegge-gas-town-ai-stages.png)
+
+No necesitás estar siempre en el borde de la adopción. Sí necesitás entender qué ya se volvió baseline y qué posibilidades nuevas existen.
+
+## Qué cambió
+
+La producción de código se volvió más barata. Eso no significa que la ingeniería se volvió fácil, ni que la calidad dejó de importar. Significa que cambió la tolerancia a ciertos tipos de riesgo.
+
+En muchos productos, el peor caso razonable de shipping es: "sale mal, lo detectamos y lo hotfixeamos". Si ahora podés producir, revisar y corregir más rápido, también podés tolerar más experimentación.
+
+Pero hay límites que no son hotfixeables:
+
+- Perder dinero real.
+- Exponer datos o credenciales.
+- Romper confianza con usuarios.
+- Crear riesgo legal, compliance o seguridad.
+- Dejar código que nadie en el equipo entiende.
+
+La barra de producción no baja de manera uniforme. Se mueve según el costo de equivocarse.
+
+## La lectura de Silver
+
+Esta es la lectura de Silver sobre el cambio reciente:
+
+| Momento | Lectura |
+| --- | --- |
+| Feb 2024 | Copilot autocomplete y los primeros usuarios de Cursor muestran que AI puede ayudar, pero todavía no cambia el workflow de la mayoría. |
+| Jul 2024 | Cursor cruza una barrera práctica: mejor feedback loop que buscar respuestas sueltas en Stack Overflow. |
+| Feb 2025 | Claude Code instala el CLI agent como workflow serio: más fácil de multichatear y de llevar a distintos contextos. |
+| Jul 2025 | Modelos más fuertes y plan mode harnesses suben el techo de lo que puede hacer un agent. |
+| Nov 2025 | Modelos más rápidos, mejores TUIs y sistemas de skills/configuración hacen que el setup empiece a importar más. |
+| Jan 2026 | El mercado tiene un cambio de clima: ya no es raro esperar que un developer use agents o background agents. |
+| May 2026 | Los background agents empiezan a acercarse al workflow de developers que no viven probando herramientas todo el día. |
+
+## Takeaway
+
+Esta es una foto del momento. Ahora estás actualizado. El punto no es casarte con una herramienta, sino mantenerte lo suficientemente inquieto como para reconocer cuándo cambió el default.

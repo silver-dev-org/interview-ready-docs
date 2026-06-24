@@ -22,21 +22,25 @@ function Author({ name, role, href }) {
 function useLoadMeta() {
   const router = useRouter();
   const { asPath } = router;
-  const metaPath = asPath.replace(/\/[^\/]*$/, "");
+  const pagePath = asPath.split(/[?#]/)[0].replace(/\/$/, "") || "/";
+  const metaPath = pagePath.replace(/\/[^\/]*$/, "");
+  const pageKey = pagePath.split("/").filter(Boolean).pop() || "index";
   const meta = require(`../pages${metaPath}/_meta.json`);
-  return meta;
+  const pageMeta = meta[pageKey];
+
+  return pageMeta?.authors ?? meta.authors;
 }
 
 export function Authors() {
-  const meta = useLoadMeta();
+  const authors = useLoadMeta();
 
-  if (!meta.authors) {
+  if (!authors) {
     return;
   }
   return (
     <>
       <span className="authors-title">Autores</span>
-      {meta.authors.values.map((author) => (
+      {authors.values.map((author) => (
         <Author key={author.name} {...author} />
       ))}
     </>

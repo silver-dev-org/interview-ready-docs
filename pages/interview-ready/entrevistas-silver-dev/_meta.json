@@ -1,7 +1,19 @@
 {
   "connect4": "Connect 4",
   "react-signup-form": "React Sign-up Form",
-  "ai-adoption": "AI Adoption",
+  "ai-adoption": {
+    "title": "AI Adoption",
+    "authors": {
+      "display": "hidden",
+      "values": [
+        {
+          "name": "Lautaro Paskevicius",
+          "role": "Founding Engineer @ Silver.dev",
+          "href": "https://www.linkedin.com/in/lautaropaske"
+        }
+      ]
+    }
+  },
   "authors": {
     "display": "hidden",
     "values": [

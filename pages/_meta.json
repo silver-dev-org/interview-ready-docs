@@ -15,7 +15,24 @@
     "newWindow": true
   },
 
-  "candidate-guide": "📕 Candidate Guide",
+  "candidate-guide": {
+    "title": "📕 Candidate Guide",
+    "authors": {
+      "display": "hidden",
+      "values": [
+        {
+          "name": "Gabriel Benmergui",
+          "role": "Silver.dev Founder",
+          "href": "https://www.linkedin.com/in/gabriel-benmergui/"
+        },
+        {
+          "name": "Lautaro Paskevicius",
+          "role": "Founding Engineer @ Silver.dev",
+          "href": "https://www.linkedin.com/in/lautaropaske"
+        }
+      ]
+    }
+  },
   "interview-ready": "✅ Interview Ready",
   "resources-and-programs": "🎁 Recursos & Beneficios"
 }

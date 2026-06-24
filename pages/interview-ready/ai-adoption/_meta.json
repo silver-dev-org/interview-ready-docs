@@ -1,7 +1,8 @@
 {
-  "interview-overview": "AI-Fluent Live Coding: Interview Overview",
-  "execution-system": "AI-Fluent Live Coding: Execution System",
-  "evaluation-criteria": "AI-Fluent Live Coding: Evaluation Criteria",
+  "overview": "AI Adoption: Overview",
+  "ai-interviews": "AI Adoption: AI Interviews",
+  "execution-system": "AI Adoption: Execution System",
+  "evaluation-criteria": "AI Adoption: Evaluation Criteria",
   "authors": {
     "display": "hidden",
     "values": [

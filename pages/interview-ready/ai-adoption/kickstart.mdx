@@ -1,0 +1,134 @@
+import { Callout } from 'nextra-theme-docs';
+
+# AI Adoption: Kickstart
+
+## Objetivo
+
+Esta sección propone una forma concreta de empezar a trabajar mejor con AI: cómo ganar velocidad sin perder ownership, cómo mantenerte al día y cómo convertir tu diferencial técnico en una ventaja que siga importando.
+
+## Cómo empezar
+
+El baseline es simple: usá AI para moverte más rápido sin ceder el control. Delegá exploración, scaffolding, tests, cambios repetitivos y revisión; quedate cerca del problema, leé los diffs, cortá sesiones que empiezan a derivar y cerrá con una solución que podés explicar sin mirar el transcript.
+
+### No podés tercerizar el entendimiento
+
+La regla central viene de [kache](https://x.com/yacineMTB/status/2018886083120153046?s=20): podés tercerizar pensar, pero no podés tercerizar entender.
+
+![Post de kache sobre AI y entendimiento](/images/kache-outsource-understanding.png)
+
+Tus herramientas te pueden ayudar a pensar, pero no a entender por vos. La deuda cognitiva **es** deuda técnica: si no entendés a fondo lo que estás pusheando a producción, no tenés ownership real sobre ese cambio. El riesgo es simple: vas a tener que entenderlo cuando se rompa, con todos los costos que eso implique.
+
+AI puede acelerar implementación, exploración, tests, refactors chicos y revisión. Pero si no entendés el problema o la forma de la solución, el código producido es una incógnita de la cual sos el paciente cero. Después también será una incógnita para tus compañeros de trabajo y para los stakeholders que dependan de ese sistema.
+
+Las entrevistas de live coding con AI juzgan tus reflejos en este aspecto. En una ventana corta, el entrevistador intenta detectar si estás usando herramientas para evitar esfuerzo cognitivo o para mejorar tu productividad.
+
+El entrevistador no evalúa si una herramienta puede programar: esa vara ya la supera incluso gente no técnica. Evalúa si vos podés usarla sin perder control.
+
+<Callout emoji="💡">
+  Si el entrevistador tiene que explicarte tu propio código, el reject es inmediato.
+</Callout>
+
+### Agent first, IDE second
+
+Una buena estrategia es empezar con el agent cuando el problema todavía necesita empuje amplio:
+
+- leer el repo,
+- identificar archivos relevantes,
+- proponer un plan corto,
+- implementar scaffolding,
+- escribir tests iniciales,
+- buscar casos borde.
+
+Después, el IDE vuelve al centro. Ahí inspeccionás diffs, corregís detalles, ajustás nombres, validás comportamiento y preparás la explicación.
+
+Cuando ya sabés exactamente qué cambio hay que hacer, muchas veces conviene hacerlo vos. No te quedes en modo espectador por pereza. Si el agent está tardando, preguntando de más o generando ruido, cortalo y seguí manualmente.
+
+### Acelerá en las rectas
+
+La analogía de Fórmula 1 sirve: si acelerás en todas partes, te chocás. La habilidad está en identificar las rectas y las curvas.
+
+Buenas rectas para usar AI:
+
+- crear archivos o componentes repetitivos,
+- escribir tests alrededor de una conducta clara,
+- migrar patrones similares,
+- buscar dónde vive una responsabilidad en el repo,
+- generar variantes de copy o casos de prueba,
+- pedir una revisión de bugs antes del cierre.
+
+Curvas donde tenés que frenar:
+
+- interpretar requerimientos ambiguos,
+- decidir estructura de datos o arquitectura,
+- revisar edge cases,
+- debuggear output que no entendés,
+- aceptar cambios grandes que el agent inventó,
+- explicar tradeoffs al entrevistador.
+
+El buen uso de AI no es acelerar todo. Es acelerar donde el costo de equivocarse es bajo y recuperar control donde la decisión importa.
+
+### Trabajo paralelo
+
+Las tareas difíciles siguen siendo difíciles. Lo que cambió es que muchas tareas fáciles ahora se pueden hacer en paralelo.
+
+Un patrón útil:
+
+1. Un agent implementa el cambio principal.
+2. Otro agent escribe o mejora tests.
+3. Otro agent revisa el diff buscando bugs, edge cases y sobreingeniería.
+4. Vos integrás, decidís y explicás.
+
+Esto solo funciona si manejás el contexto activamente. Paralelizar sin supervisión genera conflictos, cambios incompatibles y falsa sensación de avance.
+
+### Make the change easy
+
+[Kent Beck](https://x.com/KentBeck/status/250733358307500032) lo formuló como "make the change easy, then make the easy change". En castellano práctico: hacé fácil el cambio antes de pedirle al agent que lo haga rápido.
+
+Con AI, esto importa más. Pensá en agents como una cantidad infinita de juniors rápidos. A veces parecen seniors, y de golpe hacen algo ingenuo. Tu trabajo es darles harnesses, convenciones y feedback loops:
+
+- tests rápidos,
+- instrucciones claras,
+- límites de alcance,
+- comandos de validación,
+- ejemplos del estilo del repo.
+
+El harness hace el trabajo pesado. Sin harness, el agent improvisa.
+
+## Elegí tus influencias
+
+Hay demasiada información dando vueltas. No vas a usar siempre la mejor herramienta, y está bien.
+
+Elegí algunas comunidades, creadores o empresas que te sirvan de ancla para adoptar mejoras sin vivir persiguiendo cada demo:
+
+- [Anthropic Engineering](https://www.anthropic.com/engineering) y [Anthropic Academy](https://www.anthropic.com/learn/build-with-claude), para seguir cómo piensan agents, evals, Claude Code y tool use.
+- [OpenAI Academy](https://academy.openai.com/) y [OpenAI API docs](https://developers.openai.com/api/docs/guides/prompt-engineering), para cursos y guías oficiales sobre uso de modelos.
+- [Nous Research](https://x.com/NousResearch), para seguir open-source AI, modelos abiertos y avances alrededor de agents.
+- [Matt Pocock](https://x.com/mattpocockuk), para workflows de AI coding explicados desde fundamentos sólidos de software y TypeScript.
+- [Peter Steinberger](https://x.com/steipete), para ideas agresivas sobre agents, loops, automation y tooling.
+- [Theo Browne](https://x.com/theo), para criterio de producto, devtools y adopción práctica.
+
+El objetivo de probar herramientas nuevas no es ganarle productividad a todos los demás cada semana. Es entender qué se volvió posible para tu empresa, tu workflow y tu vida diaria. De a poco encontrás nuevos defaults y desarrollás opiniones propias.
+
+No fuerces workflows que no entendés. Probá, descartá, adoptá y ajustá.
+
+## Devs contra todos
+
+### El moat cambió
+
+El know-how técnico sigue importando, pero no por gatekeeping. Importa cuando se convierte en criterio: seguridad, sistemas, efectos de segundo orden, diseño, producto, operación, domain expertise, performance, datos y ownership.
+
+Si tu diferencial es solamente saber picar teclas en un framework, AI achica ese moat. Si tu diferencial es entender sistemas, usuarios, riesgos y tradeoffs, AI lo amplifica.
+
+### La competencia nueva
+
+Una persona no técnica que ignora estas herramientas está, en la práctica, esperando una AGI. Probablemente no sea esa persona quien compita con vos.
+
+Una persona no técnica que sí adopta bien estas herramientas, y además trae criterio de negocio, gusto, comunicación, distribución o domain expertise, se vuelve un jugador relevante. No está claro si eso agranda la torta o achica oportunidades para perfiles flojos. Lo que sí está claro es que baja el gatekeeping en áreas que antes exigían meses o años de práctica técnica antes de poder construir algo útil.
+
+De nuestra parte: bienvenidos. Es mejor para la industria que más gente competente pueda construir.
+
+### Usá el head start
+
+Los devs todavía tenemos un head start importante. Sabemos leer código, anticipar bugs, pensar permisos, datos, deploys, performance, observabilidad y deuda técnica. También sabemos cuándo una solución plausible no alcanza.
+
+Pero ese head start no se conserva solo. Contra gente productiva, relentless y con buen criterio siempre fue difícil competir; AI simplemente les da más palanca. Si no aprendés infra, diseño, producto o algún dominio valioso, tus oportunidades se achican. Si usás AI para amplificar criterio real, se agrandan.

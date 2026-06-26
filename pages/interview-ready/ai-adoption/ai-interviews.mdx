@@ -12,6 +12,11 @@ Un candidato fuerte no necesita que el entrevistador le entregue un sistema perf
 
 Buena parte de la entrevista es simplemente conocer tu setup. El meta varía demasiado como para que exista una respuesta correcta, pero sí hay un baseline: qué tanto adoptaste AI en tu workflow, con qué comodidad te manejás y cuánto control conservás cuando la herramienta se equivoca.
 
+Un setup aceptable a la fecha (Junio 2026) consiste de al menos:
+- Al menos 1 chat interface in-context (e.g Cursor/Codex/Claude) activa
+- Una subscripción paga con límites acordes a la entrevista
+- Un approach alternativo, para verificación y ante eventualidades (IDE con AI integrada u otro CLI tool)
+
 ### Mayor productividad
 
 Las entrevistas con AI tienen un scope mayor a las entrevistas tradicionales, naturalmente. El resultado que se busca obtener durante el tiempo de tu challenge es un spike de lo que puede ser tu productividad con un problema listo para que puedas llegar lejos.
@@ -23,7 +28,7 @@ Si estás acostumbrado a entrevistas de live coding, tenés que ajustar tu expec
 El objetivo no es que el entrevistador espere el output de tu prompt. La señal está en cómo definís el problema, qué delegás y qué no, cómo guiás al agent según su comportamiento y cómo juzgás si el requerimiento está completado.
 
 - **Setup:** llegás con editor, terminal, agents, modelos, permisos y credenciales listos.
-- **Prompting:** transformás una consigna abierta en una tarea clara, acotada y verificable.
+- **Prompting:** transformás una consigna abierta en una tarea clara, acotada y verificable, y sos consciente del context window.
 - **Control:** monitoreás al agent en todo momento, corregís la dirección que está tomando en base a sus thinking tokens y cortás la sesión cuando empieza a desviarse o luce bloqueado.
 - **Resourcefulness:** si surge la posibilidad de paralelizar la aprovechás, tenés alternativas si una herramienta falla, se queda sin contexto o produce mala calidad.
 - **Ownership:** entendes rápido la estructura del proyecto, podés explicar y modificar el resultado sin depender del transcript
@@ -60,3 +65,34 @@ La práctica útil no es acumular prompts. Es entrenar reflejos bajo presión de
 - Cerrá cada práctica explicando la solución sin mirar el transcript
 
 La meta es llegar a un setup en el cual vos te sientas productivo y con mastery al respecto. Un setup que si te falla, tenés intuiciones de por qué y cómo resolverlo en el momento. Más solo es mejor si tenés confianza en lo que estás haciendo.
+
+## Evaluation criteria
+
+La evaluación busca señal: si podés producir trabajo correcto rápido mientras seguís en control.
+
+Usar AI no te da crédito automático. Tampoco te penaliza automáticamente. Lo que importa es si la herramienta mejora tu ejecución o si revela dependencia, desorden y falta de ownership.
+
+| Criterio | Señal positiva | Señal negativa |
+| --- | --- | --- |
+| Setup | Llegás con editor, terminal, agents, modelos, permisos y credenciales listos **acorde al baseline de la industria**. Tenés alternativas si una herramienta falla. | Usás solo tab autocomplete de VS Code o Cursor, prompteás en web UI y pegás el resultado al código, tenés suscripciones free con contexto limitado, te bloqueás si la herramienta principal falla o cambiás de herramienta sin una razón clara. |
+| Entendimiento del problema | Reencuadrás la consigna, identificás riesgos y priorizás lo esencial. Priorizás terminar el problema sobre demostrar el workflow. | Empezás a promptear sin entender qué hay que entregar. Te enfocás en plan modes largos cuando el problema necesita ejecución. |
+| Prompt quality | Das instrucciones concretas, acotadas y verificables. | Escribís prompts vagos y aceptás cualquier dirección del agent. |
+| Supervisión del agent | Monitoreás, interrumpís y corregís rápido. | Dejás al agent trabajar solo mientras el reloj corre. Esperás pasivamente permisos o confirmaciones innecesarios. Dejás que el agent agregue arquitectura que la consigna no pide. |
+| Correctitud técnica | Validás con tests, ejecución manual o razonamiento claro. | Confundís output plausible con solución correcta. |
+| Debugging y recovery | Detectás drift, reducís alcance y volvés a una ruta simple. | Te quedás atrapado en una sesión mala o en errores generados por AI. Tratás una entrevista cronometrada como si fuera production hardening. |
+| Comunicación | Explicás qué delegaste, qué decidiste y qué falta. | Narrás el transcript en lugar de explicar ingeniería. |
+| Ownership final | Podés modificar y defender cada parte importante del código. | Entregás código que no podés modificar en vivo o no podés explicar por qué funciona. |
+
+### El criterio tácito
+
+Hay un criterio behavioral que muchas empresas todavía no dicen en voz alta: ¿vas a ayudar a la empresa a adoptar AI o la empresa va a tener que ayudarte a vos?
+
+La entrevista técnica es una parte de esa señal. Pero AI adoption no es solo coding. También aparece en cómo preparás contenido, cómo documentás, cómo revisás trabajo, cómo analizás una decisión y cómo reducís el costo de producir algo útil.
+
+Por ejemplo, una presentación hecha con Claude Design (o v0, etc), notas aumentadas con AI o un workflow de estudio mejorado no son detalles decorativos. Muestran que entendés que el cuello de botella de producción se está moviendo. Podemos discutir si una presentación generada con AI es estrictamente mejor que notas y video. Lo importante es que ahora es factible. Cuando algo nuevo se vuelve factible, aparecen oportunidades para impresionar. Después caducan, porque se vuelven baseline.
+
+### Takeaways
+
+- AI Adoption es parte del criterio de ingeniería, no un reemplazo.
+- Los mejores candidatos son rápidos, directos y dueños del resultado.
+- La herramienta puede escribir código. La entrevista evalúa si vos podés trabajar mejor por tenerla.

@@ -1,5 +1,6 @@
 # Interview Ready Docs
 
+
 This repository contains the documentation for the Interview Ready project, designed to help developers prepare for technical interviews.
 
 ## Contents

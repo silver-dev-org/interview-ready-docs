@@ -1,0 +1,15 @@
+{
+  "overview": "Overview",
+  "fundamentals": "Work Experience Fundamentals",
+  "narratives": "Work Experience Narratives",
+  "authors": {
+    "display": "hidden",
+    "values": [
+      {
+        "name": "Gabriel Benmergui",
+        "role": "Silver.dev Founder",
+        "href": "https://www.linkedin.com/in/gabriel-benmergui/"
+      }
+    ]
+  }
+}

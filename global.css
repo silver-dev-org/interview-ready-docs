@@ -113,3 +113,106 @@ $gradient-radial: radial-gradient(#d7263dff, #f46036ff, #2e294eff, #1b998bff, #c
 .light .logo-dark {
     display: none;
 }
+
+/* Slide Carousel */
+.slide-carousel {
+    margin: 24px 0;
+}
+
+.slide-carousel-viewport {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid rgba(229, 229, 229, 0.3);
+    background: #000;
+}
+
+.slide-carousel-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    user-select: none;
+}
+
+.slide-carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    line-height: 1;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s;
+}
+
+.slide-carousel-arrow:hover {
+    background: rgba(0, 0, 0, 0.75);
+}
+
+.slide-carousel-arrow-left {
+    left: 12px;
+}
+
+.slide-carousel-arrow-right {
+    right: 12px;
+}
+
+.slide-carousel-pagination {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    margin-top: 12px;
+    flex-wrap: wrap;
+}
+
+.slide-carousel-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(150, 150, 150, 0.4);
+    cursor: pointer;
+    padding: 0;
+    transition: background 0.2s;
+}
+
+.slide-carousel-dot.active {
+    background: hsl(25, 95%, 53%);
+}
+
+.slide-carousel-dot:hover {
+    background: hsl(25, 95%, 43%);
+}
+
+.slide-carousel-counter {
+    text-align: center;
+    margin-top: 6px;
+    font-size: 13px;
+    color: rgba(150, 150, 150, 0.8);
+}
+
+@media (max-width: 640px) {
+    .slide-carousel-arrow {
+        width: 32px;
+        height: 32px;
+        font-size: 20px;
+    }
+    .slide-carousel-arrow-left {
+        left: 6px;
+    }
+    .slide-carousel-arrow-right {
+        right: 6px;
+    }
+}

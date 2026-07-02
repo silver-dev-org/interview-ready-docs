@@ -45,7 +45,7 @@ export default function PresentationPage() {
 
         <main style={styles.main}>
           <iframe
-            src="/presentation.html"
+            src="/presentation-content.html"
             title="Gabriel Benmergui - Work Experience"
             style={styles.iframe}
             allow="fullscreen"

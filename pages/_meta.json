@@ -2,6 +2,13 @@
   "index": {
     "title": "🪙 Sobre Silver.dev"
   },
+  "presentation": {
+    "title": "Presentation",
+    "display": "hidden",
+    "theme": {
+      "layout": "raw"
+    }
+  },
   "open-jobs-title": {
     "title": "Open Jobs ↗",
     "type": "page",

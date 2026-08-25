@@ -22,7 +22,7 @@ export function IREmbed({ src }) {
       <Callout type="info">
         El video completo disponible en{" "}
         <a
-          href="https://ready.silver.dev"
+          href="https://ir.silver.dev/l"
           target="_blank"
           rel="noopener noreferrer"
         >

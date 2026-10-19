@@ -1,27 +1,30 @@
 ---
-description: "Cómo grabar tus soluciones en video: configuración de OBS y Audacity, escenas full cam y picture-in-picture, y exportado de audio."
+description: "Cómo grabarte resolviendo ejercicios con Cap: pantalla, cámara y micrófono en un solo video, y tips para aprovechar la grabación."
 ---
 
-import { Resource } from '@components/resource';
-import { IREmbed } from '@components/embed';
-import { FilesIcon, LinkIcon } from '@components/icons';
 import { Callout } from 'nextra-theme-docs';
 
 # Tips de grabación
 
-## 1. Preparación previa
+Grabarte resolviendo un ejercicio es lo más parecido a una live coding real: tenés que hablar mientras pensás, y después podés verte desde afuera como te vería un entrevistador.
 
-- Descargar software de grabación: [**OBS(opens in a new tab)**](https://obsproject.com/) (para grabar video) y [**Audacity(opens in a new tab)**](https://www.audacityteam.org/) (para grabar audio).
-- En caso de querer realizar la grabación online, te sugerimos [**StreamYard**](https://www.streamyard.com/) configurando la opción de grabación local.
+## Software recomendado: Cap
 
-## 2. Grabación
+Recomendamos [**Cap**](https://cap.so/). Es gratis para uso personal y open source, y funciona en macOS, Windows y Linux. Graba pantalla, cámara y micrófono a la vez, sin configuración extra.
 
-- Configuración OBS: Dentro del programa tenemos que armar 2 escenas. Una Full Cam y otra de formato Picture-in-Picture.
-    - Full Cam: En *Sources* seleccionar *+* y agregar *Video capture Device* en la sección de *Device* seleccionar nuestro dispositivo de grabación y en el preset seleccionar 1920x 1080. Una vez hecho esto, seleccionar nuevamente en *Sources* el botón *+* y seleccionar *Audio input capture* y nuestro dispositivo de grabación.
-    - En la escena Picture-inPicture, repetir el elemento de audio, repetir el de cámara y para capturar la pantalla, en Sources, seleccionamos *+ y macOS Screen Capture* en *Method* seleccionamos *Window capture* y en *Window* seleccionamos la ventana que vamos a capturar.
-    - Por último ir a *Settings, output y en Recording format* seleccionar MPEG-4 (.mp4)
-- Vamos a realizar la grabación de audio por separado para mantener la calidad. Realizar la descarga desde la pagina oficial de audacity, asegurarse de hacer la descarga: [**Download without Muse Hub(opens in a new tab)**](https://github.com/audacity/audacity/releases/download/Audacity-3.6.4/audacity-macOS-3.6.4-universal.dmg)
-- Una vez dentro del programa, seleccionar: *Audio setup - Recording device* y una vez dentro, seleccionar el nuestro dispositivo de grabación.
-    - Para empezar a grabar hacer click en el botón de Record (círculo rojo) y click en el botón de Stop para frenar la grabación. En el ícono de micrófono podemos subir o bajar la ganancia. Buscamos que el vúmetro (linea verde) de su máximo pico en -12.
-    - Para guardar nuestra grabación vamos a *File, Export audio, Export to compute.* En el casillero *File* seleccionamos WAV y en *Sample rate* seleccionamos 44100Hz y en *Encoding* seleccionamos *Signed 16-bit PCM*. Ponemos nombre y seleccionamos carpeta.
-- Poner a grabar ambas ventanas de OBS y Audacity, y posteriormente hacer una claqueta (un aplauso) para poder sincronizar todo en edición. A partir de ahí empezar el desarrollo de contenido.
+1. Descargá Cap desde [cap.so/download](https://cap.so/download) y abrilo.
+2. Elegí el modo **Studio**: graba local, sin límite de tiempo y sin subir nada a la nube.
+3. Elegí qué capturar: la ventana de tu editor o la pantalla completa.
+4. Seleccioná tu cámara y tu micrófono.
+5. Hacé click en **Record**. Cuando termines, se abre un editor donde podés recortar y exportar a MP4.
+
+<Callout type="info">
+  Evitá el modo **Instant** para practicar: sube el video a la nube mientras grabás y, en el plan gratuito, los links están limitados a 5 minutos.
+</Callout>
+
+## Cómo aprovechar la grabación
+
+- **Prendé la cámara.** En una entrevista real te están mirando. Grabarte la cara agrega esa presión y te deja ver tu lenguaje corporal.
+- **Pensá en voz alta.** Explicá qué entendiste del enunciado, qué enfoque vas a usar y por qué, antes de escribir código.
+- **Poné un timer.** Usá el mismo tiempo que tendrías en la entrevista (30 a 45 minutos) y no pares la grabación si te trabás.
+- **Mirá la grabación completa.** Fijate dónde te quedaste en silencio, dónde no se entendía lo que hacías y cuánto tardaste en llegar a una solución que funcione.

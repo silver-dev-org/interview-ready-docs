@@ -1,7 +1,19 @@
 {
   "pre-entrevista": "0️⃣ Pre-Entrevista",
   "recruiter-screenings": "1️⃣ Recruiter & Company Screenings",
-  "live-coding-interviews": "2️⃣ Live Coding Interviews",
+  "live-coding-interviews": {
+    "title": "2️⃣ Live Coding Interviews",
+    "authors": {
+      "display": "hidden",
+      "values": [
+        {
+          "name": "Lautaro Paskevicius",
+          "role": "Founding Engineer @ Silver.dev",
+          "href": "https://www.linkedin.com/in/lautaropaske"
+        }
+      ]
+    }
+  },
   "takehome-challenges": "3️⃣ Takehome Challenges",
   "system-design-interviews": "4️⃣ System Design Interviews",
   "negotiation-offer-stage": "5️⃣ Negotiation & Offer Stage",
@@ -13,11 +25,6 @@
         "name": "Gabriel Benmergui",
         "role": "Silver.dev Founder",
         "href": "https://www.linkedin.com/in/gabriel-benmergui/"
-      },
-      {
-        "name": "Lautaro Paskevicius",
-        "role": "Founding Engineer @ Silver.dev",
-        "href": "https://www.linkedin.com/in/lautaropaske"
       }
     ]
   }

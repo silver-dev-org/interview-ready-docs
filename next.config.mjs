@@ -115,6 +115,9 @@ const MOVED_PATHS = {
   [`${IR}/library/evaluando-equity`]: `${IR}/manejando-ofertas/evaluando-ofertas`,
   [`${IR}/soft-fundamentals/entendiendo-consultoras`]: `${IR}/manejando-ofertas/entendiendo-consultoras`,
   [`${IR}/soft-fundamentals/evaluando-empresas`]: `${IR}/manejando-ofertas/evaluando-empresas`,
+
+  // --- Candidate Guide (split into one page per interview stage) ---
+  ["/candidate-guide"]: "/candidate-guide/pre-entrevista",
 };
 
 const withNextra = nextra({

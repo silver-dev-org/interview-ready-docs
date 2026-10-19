@@ -1,0 +1,19 @@
+{
+  "live-coding-deliverables": "Live Coding Deliverables",
+  "tips-de-grabacion": "Tips de Grabación",
+  "authors": {
+    "display": "hidden",
+    "values": [
+      {
+        "name": "Gabriel Benmergui",
+        "role": "Silver.dev Founder",
+        "href": "https://www.linkedin.com/in/gabriel-benmergui/"
+      },
+      {
+        "name": "Lautaro Paskevicius",
+        "role": "Founding Engineer @ Silver.dev",
+        "href": "https://www.linkedin.com/in/lautaropaske"
+      }
+    ]
+  }
+}

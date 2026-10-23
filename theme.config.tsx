@@ -27,31 +27,36 @@ const DEFAULT_OG_IMAGE = "/images/og-image.png";
 const config: DocsThemeConfig = {
   primaryHue: 25,
   primarySaturation: 95,
+  // Nextra already renders description, og:title and og:description through
+  // next-seo, so they belong here; repeating them in head() duplicates them.
   useNextSeoProps() {
-    return { titleTemplate: "%s - Silver.dev" };
-  },
-  head() {
     const { asPath, defaultLocale, locale } = useRouter();
-    const { title, frontMatter } = useConfig();
+    const { frontMatter } = useConfig();
     const url =
       SITE_URL + (defaultLocale === locale ? asPath : `/${locale}${asPath}`);
+    const image = SITE_URL + (frontMatter.image || DEFAULT_OG_IMAGE);
+
+    return {
+      titleTemplate: "%s - Silver.dev",
+      description: frontMatter.description || DEFAULT_DESCRIPTION,
+      openGraph: {
+        url,
+        type: "article",
+        siteName: "Silver.dev Docs",
+        locale: "es_AR",
+        images: [{ url: image, width: 1200, height: 630 }],
+      },
+      twitter: { cardType: "summary_large_image" },
+    };
+  },
+  head() {
+    const { title, frontMatter } = useConfig();
     const fullTitle = `${title} - Silver.dev`;
     const description = frontMatter.description || DEFAULT_DESCRIPTION;
     const image = SITE_URL + (frontMatter.image || DEFAULT_OG_IMAGE);
 
     return (
       <>
-        <meta name="description" content={description} />
-        <meta property="og:url" content={url} />
-        <meta property="og:type" content="article" />
-        <meta property="og:site_name" content="Silver.dev Docs" />
-        <meta property="og:title" content={fullTitle} />
-        <meta property="og:description" content={description} />
-        <meta property="og:image" content={image} />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-        <meta property="og:locale" content="es_AR" />
-        <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={fullTitle} />
         <meta name="twitter:description" content={description} />
         <meta name="twitter:image" content={image} />

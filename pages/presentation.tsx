@@ -9,6 +9,9 @@ export default function PresentationPage() {
           name="description"
           content="Gabriel Benmergui Work Experience presentation"
         />
+        {/* An asset linked from talks and other sites, not a docs page:
+            reachable by its link, kept out of search. */}
+        <meta name="robots" content="noindex, follow" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/images/favicon.png" type="image/png" />
       </Head>
